@@ -17,12 +17,10 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-<!-- NAVBAR -->
 <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
         <span class="text-2xl font-extrabold gradient-text tracking-tighter italic">GlobalPath.</span>
         
-        <!-- القائمة الرئيسية (مرئية على md+) -->
         <div class="hidden md:flex space-x-8 font-bold text-slate-600 text-sm uppercase tracking-wider">
             <a href="#visas" class="hover:text-blue-600 transition">Visas</a>
             <a href="#scholarships" class="hover:text-blue-600 transition">Scholarships</a>
@@ -30,14 +28,12 @@
             <a href="#tools" class="hover:text-blue-600 transition">Tools</a>
         </div>
 
-        <!-- أيقونة الهاتف (hamburger) -->
-        <div class="md:hidden text-slate-400 cursor-pointer">
+        <div class="md:hidden text-slate-400 cursor-pointer" id="menu-btn">
             <i class="fas fa-bars"></i>
         </div>
     </div>
 
-    <!-- القائمة المنسدلة للهواتف -->
-    <div class="md:hidden hidden px-4 pb-4 space-y-2 bg-white/90 border-t border-slate-200">
+    <div class="md:hidden hidden px-4 pb-4 space-y-2 bg-white/90 border-t border-slate-200" id="mobile-menu">
         <a href="#visas" class="block py-2 font-bold text-slate-700 hover:text-blue-600 transition">Visas</a>
         <a href="#scholarships" class="block py-2 font-bold text-slate-700 hover:text-blue-600 transition">Scholarships</a>
         <a href="#career" class="block py-2 font-bold text-slate-700 hover:text-blue-600 transition">Career</a>
@@ -45,7 +41,6 @@
     </div>
 </nav>
 
-<!-- HERO -->
 <header class="py-24 px-4 text-center hero-bg border-b border-slate-100">
     <div class="max-w-4xl mx-auto">
         <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block">Free Access 2026</span>
@@ -56,7 +51,6 @@
 
 <main class="max-w-7xl mx-auto px-4 py-16">
 
-    <!-- VISAS SECTION -->
     <section id="visas" class="mb-24">
         <div class="flex items-center mb-12">
             <div class="w-10 h-1 bg-blue-600 mr-4"></div>
@@ -64,74 +58,63 @@
         </div>
         <div class="grid md:grid-cols-3 gap-8">
 
-            <!-- Germany -->
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
                 <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 text-white text-xl group-hover:bg-blue-600 transition-colors">
                     <i class="fas fa-passport"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Germany Freelance Visa</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Step-by-step registration for 'Freiberufler' status. We cover the Finanzamt registration and health insurance requirements.</p>
-                <a href="about/germany-freelance-visa.html" class="text-blue-600 font-black text-xs uppercase tracking-widest border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">Read Blueprint</a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Step-by-step registration for 'Freiberufler' status.</p>
+                <a href="germany-freelance-visa.html" class="text-blue-600 font-black text-xs uppercase tracking-widest border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">Read Blueprint</a>
             </article>
 
-            <!-- Spain -->
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
                 <div class="w-14 h-14 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-sun"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Spain Nomad Visa</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">A deep dive into the 15% flat tax rate (Beckham Law) and the 2026 income requirements for remote workers.</p>
-                <a href="about/spain-digital-nomad-visa.html" class="text-red-600 font-black text-xs uppercase tracking-widest border-b-2 border-red-200 hover:border-red-600 transition pb-1">Read Blueprint</a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">A deep dive into the 15% flat tax rate (Beckham Law).</p>
+                <a href="spain-digital-nomad-visa.html" class="text-red-600 font-black text-xs uppercase tracking-widest border-b-2 border-red-200 hover:border-red-600 transition pb-1">Read Blueprint</a>
             </article>
 
-            <!-- Portugal -->
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
                 <div class="w-14 h-14 bg-green-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-water"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Portugal Nomad Visa</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Requirements for monthly income, residency, and remote work validation in Portugal for digital nomads.</p>
-                <a href="about/portugal-digital-nomad-visa.html" class="text-green-600 font-black text-xs uppercase tracking-widest border-b-2 border-green-200 hover:border-green-600 transition pb-1">Read Blueprint</a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Requirements for monthly income and residency.</p>
+                <a href="portugal-digital-nomad-visa.html" class="text-green-600 font-black text-xs uppercase tracking-widest border-b-2 border-green-200 hover:border-green-600 transition pb-1">Read Blueprint</a>
             </article>
 
-            <!-- Cheapest Countries -->
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
                 <div class="w-14 h-14 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-euro-sign"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Cheapest Nomad Visas</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Compare costs across countries offering digital nomad visas for budget-conscious remote workers.</p>
-                <a href="about/cheapest-digital-nomad-visas.html" class="text-yellow-600 font-black text-xs uppercase tracking-widest border-b-2 border-yellow-200 hover:border-yellow-600 transition pb-1">Read Blueprint</a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Compare costs across budget-friendly countries.</p>
+                <a href="cheapest-digital-nomad-visas.html" class="text-yellow-600 font-black text-xs uppercase tracking-widest border-b-2 border-yellow-200 hover:border-yellow-600 transition pb-1">Read Blueprint</a>
             </article>
 
-            <!-- Digital Nomad vs Work Visa -->
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
                 <div class="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-exchange-alt"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Nomad Visa vs Work Visa</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Full comparison between digital nomad visas and traditional work permits for international remote work.</p>
-                <a href="about/digital-nomad-vs-work-visa.html" class="text-purple-300 font-black text-xs uppercase tracking-widest border-b-2 border-purple-100 hover:border-purple-300 transition pb-1">Read Blueprint</a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Full comparison between different permit types.</p>
+                <a href="digital-nomad-vs-work-visa.html" class="text-purple-600 font-black text-xs uppercase tracking-widest border-b-2 border-purple-100 hover:border-purple-600 transition pb-1">Read Blueprint</a>
             </article>
 
-            <!-- Visa Rejections -->
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
                 <div class="w-14 h-14 bg-red-500 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-times-circle"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Nomad Visa Rejections</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Common reasons digital nomad visas get rejected and how to avoid pitfalls in your application.</p>
-                <a href="about/digital-nomad-visa-rejection.html" class="text-red-600 font-black text-xs uppercase tracking-widest border-b-2 border-red-200 hover:border-red-600 transition pb-1">Read Blueprint</a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Common reasons and how to avoid application pitfalls.</p>
+                <a href="digital-nomad-visa-rejection.html" class="text-red-600 font-black text-xs uppercase tracking-widest border-b-2 border-red-200 hover:border-red-600 transition pb-1">Read Blueprint</a>
             </article>
 
-            <!-- AdSense -->
-            <div class="bg-slate-100 rounded-[2rem] border-2 border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-black text-xs uppercase tracking-widest p-8 text-center">
-                AdSense Placement Space
-            </div>
         </div>
     </section>
 
-    <!-- SCHOLARSHIPS SECTION -->
     <section id="scholarships" class="mb-24">
         <div class="flex items-center mb-8">
             <div class="w-10 h-1 bg-blue-600 mr-4"></div>
@@ -140,68 +123,38 @@
         <p class="text-slate-500 italic text-center">Content coming soon...</p>
     </section>
 
-    <!-- CAREER SECTION -->
-    <section id="career" class="mb-24">
-        <div class="flex items-center mb-8">
-            <div class="w-10 h-1 bg-blue-600 mr-4"></div>
-            <h2 class="text-3xl font-black uppercase tracking-tighter italic">Career</h2>
-        </div>
-        <p class="text-slate-500 italic text-center">Content coming soon...</p>
-    </section>
-
-    <!-- TOOLS SECTION -->
-    <section id="tools" class="mb-24">
-        <div class="flex items-center mb-8">
-            <div class="w-10 h-1 bg-blue-600 mr-4"></div>
-            <h2 class="text-3xl font-black uppercase tracking-tighter italic">Tools</h2>
-        </div>
-        <p class="text-slate-500 italic text-center">Content coming soon...</p>
-    </section>
-
 </main>
 
-<!-- FOOTER -->
 <footer class="bg-white border-t border-slate-200 py-12">
     <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-
-            <div class="text-2xl font-black gradient-text tracking-tighter italic">
-                GlobalPath.
-            </div>
-
+            <div class="text-2xl font-black gradient-text tracking-tighter italic">GlobalPath.</div>
             <div class="flex flex-wrap justify-center items-center gap-8 text-slate-400">
-                <a href="about/about-us.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
+                <a href="about-us.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-info-circle text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">About</span>
                 </a>
-
                 <a href="contact-us.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-envelope text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">Contact</span>
                 </a>
-
                 <a href="privacy-policy.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-user-shield text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">Privacy</span>
                 </a>
-
                 <a href="terms-conditions.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-file-contract text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">Terms</span>
                 </a>
             </div>
-
-            <div class="text-[9px] font-bold text-slate-400 tracking-[0.3em] uppercase italic">
-                © 2026 // Explore the World.
-            </div>
+            <div class="text-[9px] font-bold text-slate-400 tracking-[0.3em] uppercase italic">© 2026 // Explore the World.</div>
         </div>
     </div>
 </footer>
 
-<!-- JS لتفعيل قائمة الهاتف -->
 <script>
-    const btn = document.querySelector(".fa-bars");
-    const mobileMenu = btn.closest("nav").querySelector(".md\\:hidden.hidden");
+    const btn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
     btn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
     });
