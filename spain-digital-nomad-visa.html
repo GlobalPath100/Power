@@ -11,117 +11,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
 body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
 .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.featured-image { width: 100%; max-height: 480px; object-fit: cover; border-radius: 2rem; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #e2e8f0; background-color: #f1f5f9; }
 </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-<!-- Navbar -->
 <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
-<span class="text-2xl font-extrabold gradient-text tracking-tighter italic">GlobalPath.</span>
-<div class="hidden md:flex space-x-6 font-bold text-slate-600 text-sm uppercase tracking-wider">
-    <a href="germany-freelance-visa.html" class="hover:text-blue-600 transition">Germany Visa</a>
-    <a href="spain-digital-nomad-visa.html" class="hover:text-blue-600 transition">Spain Visa</a>
-    <a href="portugal-digital-nomad-visa.html" class="hover:text-blue-600 transition">Portugal Visa</a>
-    <a href="about-us.html" class="hover:text-blue-600 transition">About</a>
-</div>
-<div class="md:hidden text-slate-400"><i class="fas fa-bars"></i></div>
+    <span class="text-2xl font-extrabold gradient-text tracking-tighter italic">GlobalPath.</span>
+    
+    <div class="flex items-center">
+        <a href="index.html" class="text-slate-600 hover:text-blue-600 transition text-xl px-4 py-2" title="Home">
+            <i class="fas fa-house"></i>
+        </a>
+    </div>
 </div>
 </nav>
 
-<!-- Header -->
-<header class="py-20 px-4 text-center bg-white border-b border-slate-100">
-<div class="max-w-3xl mx-auto">
+<header class="py-16 px-4 text-center bg-white border-b border-slate-100">
+<div class="max-w-4xl mx-auto">
     <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tighter italic">
         Spain <span class="gradient-text">Digital Nomad Visa</span> Requirements
     </h1>
-    <p class="text-lg text-slate-500 mb-8 leading-relaxed italic font-medium">
+    <p class="text-lg text-slate-500 mb-10 leading-relaxed italic font-medium max-w-2xl mx-auto">
         Updated 2026 guide for remote workers, freelancers, and non-EU citizens looking to live in Spain.
     </p>
+
+    <div class="mt-4 mb-2">
+        <!-- ✅ FIXED IMAGE ONLY -->
+        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=1600&q=80" 
+             alt="Spain cityscape" 
+             class="featured-image">
+    </div>
 </div>
 </header>
 
-<!-- Main Content -->
-<main class="max-w-4xl mx-auto px-4 py-16 space-y-12">
+<main class="max-w-4xl mx-auto px-4 py-16 space-y-12 text-slate-700">
 
 <section>
-<h2 class="text-2xl font-bold mb-4 italic">What is the Spain Digital Nomad Visa?</h2>
-<p class="text-slate-700 leading-relaxed">
-Spain’s Digital Nomad Visa allows non-EU remote workers and freelancers to live and work legally in Spain. It combines lifestyle, tax benefits, and European stability.
-</p>
+    <h2 class="text-2xl font-bold mb-4 italic flex items-center gap-3 text-slate-900">
+        <span class="w-8 h-1 bg-blue-600"></span> What is the Spain Digital Nomad Visa?
+    </h2>
+    <p class="leading-relaxed text-lg">
+        Spain’s Digital Nomad Visa allows non-EU remote workers and freelancers to live and work legally in Spain. It combines lifestyle, tax benefits, and European stability.
+    </p>
+</section>
+
+<section class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+    <h2 class="text-2xl font-bold mb-6 italic text-slate-900">Who Can Apply?</h2>
+    <ul class="grid md:grid-cols-2 gap-4">
+        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-500"></i> Remote employees for non-Spanish companies</li>
+        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-500"></i> Freelancers with international clients</li>
+        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-500"></i> Startup founders and entrepreneurs</li>
+        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-500"></i> IT, designers, marketers, consultants</li>
+    </ul>
 </section>
 
 <section>
-<h2 class="text-2xl font-bold mb-4 italic">Who Can Apply?</h2>
-<ul class="list-disc list-inside text-slate-700 space-y-2">
-<li>Remote employees for non-Spanish companies</li>
-<li>Freelancers with international clients</li>
-<li>Startup founders and online entrepreneurs</li>
-<li>IT professionals, designers, marketers, consultants</li>
-</ul>
+    <h2 class="text-2xl font-bold mb-6 italic text-slate-900">Visa Requirements (2026)</h2>
+    <div class="grid gap-4">
+        <div class="flex items-start gap-3 bg-slate-100 p-4 rounded-xl">
+            <i class="fas fa-id-card text-blue-600 mt-1"></i>
+            <span><strong>Valid Passport:</strong> At least 1 year validity.</span>
+        </div>
+        <div class="flex items-start gap-3 bg-slate-100 p-4 rounded-xl">
+            <i class="fas fa-euro-sign text-blue-600 mt-1"></i>
+            <span><strong>Minimum Monthly Income:</strong> Approx. €2,160.</span>
+        </div>
+        <div class="flex items-start gap-3 bg-slate-100 p-4 rounded-xl">
+            <i class="fas fa-file-signature text-blue-600 mt-1"></i>
+            <span><strong>Proof of Remote Work:</strong> Active contracts or agreements.</span>
+        </div>
+        <div class="flex items-start gap-3 bg-slate-100 p-4 rounded-xl">
+            <i class="fas fa-graduation-cap text-blue-600 mt-1"></i>
+            <span><strong>Education:</strong> University degree or 3+ years experience.</span>
+        </div>
+    </div>
+</section>
+
+<section class="bg-slate-900 text-white p-10 rounded-[2.5rem] shadow-xl">
+    <h2 class="text-2xl font-bold mb-6 italic text-blue-400">Income & Tax Benefits</h2>
+    <ul class="space-y-4 text-slate-300">
+        <li class="flex items-center gap-3"><i class="fas fa-percentage text-blue-400"></i> Flat 15% income tax for up to 4 years.</li>
+        <li class="flex items-center gap-3"><i class="fas fa-coins text-blue-400"></i> Applies to income up to €600,000.</li>
+        <li class="flex items-center gap-3"><i class="fas fa-shield-alt text-blue-400"></i> No wealth tax for most foreign assets.</li>
+    </ul>
 </section>
 
 <section>
-<h2 class="text-2xl font-bold mb-4 italic">Visa Requirements (2026)</h2>
-<ul class="list-disc list-inside text-slate-700 space-y-2">
-<li><strong>Valid Passport</strong> – at least 1 year</li>
-<li><strong>Minimum Monthly Income</strong> – approx. €2,160</li>
-<li><strong>Proof of Remote Work</strong> – contracts or agreements</li>
-<li><strong>Health Insurance</strong> valid in Spain</li>
-<li><strong>Clean Criminal Record</strong> – last 5 years</li>
-<li><strong>University Degree</strong> or 3+ years experience</li>
-</ul>
+    <h2 class="text-2xl font-bold mb-6 italic text-slate-900">Step-by-Step Application</h2>
+    <ol class="list-decimal pl-6 space-y-4">
+        <li>Prepare required documents (Criminal record, Insurance, Contracts).</li>
+        <li>Apply at Spanish Consulate or from within Spain.</li>
+        <li>Wait for approval (typically 20–45 days).</li>
+        <li>Register address and obtain NIE.</li>
+        <li>Apply for residence card (TIE).</li>
+    </ol>
+</section>
+
+<section class="bg-red-50 p-8 rounded-3xl border border-red-100">
+    <h2 class="text-2xl font-bold mb-4 italic text-red-900">Common Reasons for Rejection</h2>
+    <ul class="list-disc list-inside space-y-2 text-red-800">
+        <li>Income falling below the required threshold.</li>
+        <li>Working for Spanish-based companies.</li>
+        <li>Incomplete or untranslated legal documents.</li>
+        <li>Misunderstanding complex tax rules.</li>
+    </ul>
 </section>
 
 <section>
-<h2 class="text-2xl font-bold mb-4 italic">Income & Tax Benefits</h2>
-<ul class="list-disc list-inside text-slate-700 space-y-2">
-<li>Flat 15% income tax for up to 4 years</li>
-<li>Applies to income up to €600,000</li>
-<li>No wealth tax for most foreign assets</li>
-</ul>
-</section>
-
-<section>
-<h2 class="text-2xl font-bold mb-4 italic">Step-by-Step Application</h2>
-<ol class="list-decimal list-inside text-slate-700 space-y-2">
-<li>Prepare required documents</li>
-<li>Apply at Spanish Consulate or from Spain</li>
-<li>Wait for approval (20–45 days)</li>
-<li>Register address and obtain NIE</li>
-<li>Apply for residence card (TIE)</li>
-</ol>
-</section>
-
-<section>
-<h2 class="text-2xl font-bold mb-4 italic">Common Reasons for Rejection</h2>
-<ul class="list-disc list-inside text-slate-700 space-y-2">
-<li>Income below threshold</li>
-<li>Working for Spanish companies</li>
-<li>Incomplete or untranslated documents</li>
-<li>Misunderstanding tax rules</li>
-</ul>
-</section>
-
-<section>
-<h2 class="text-2xl font-bold mb-4 italic">Final Thoughts</h2>
-<p class="text-slate-700 leading-relaxed">
-Spain’s Digital Nomad Visa is an attractive European option for remote workers. Meeting income and document requirements ensures a smooth application, offering lifestyle, tax benefits, and EU access.
-</p>
+    <h2 class="text-2xl font-bold mb-4 italic text-slate-900">Final Thoughts</h2>
+    <p class="leading-relaxed italic border-l-4 border-slate-200 pl-6">
+        Spain’s Digital Nomad Visa is an attractive European option for remote workers. Meeting income and document requirements ensures a smooth application, offering lifestyle, tax benefits, and EU access.
+    </p>
 </section>
 
 </main>
 
-<!-- Footer -->
 <footer class="bg-white border-t border-slate-200 py-12">
-<div class="max-w-7xl mx-auto px-4 text-center space-y-4">
-<p class="text-slate-400 text-sm italic">© 2026 GlobalPath. All rights reserved.</p>
-<div class="flex justify-center space-x-6 text-slate-400">
-<a href="about-us.html" class="hover:text-blue-600 transition"><i class="fas fa-info-circle"></i> About</a>
-<a href="contact-us.html" class="hover:text-blue-600 transition"><i class="fas fa-envelope"></i> Contact</a>
-<a href="privacy-policy.html" class="hover:text-blue-600 transition"><i class="fas fa-user-shield"></i> Privacy</a>
-<a href="terms-conditions.html" class="hover:text-blue-600 transition"><i class="fas fa-file-contract"></i> Terms</a>
-</div>
+<div class="max-w-7xl mx-auto px-4 text-center space-y-6">
+    <p class="text-slate-400 text-sm italic font-medium">© 2026 GlobalPath. All rights reserved.</p>
+    <div class="flex flex-wrap justify-center gap-8 text-slate-400">
+        <a href="about-us.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-info-circle"></i> About</a>
+        <a href="contact-us.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="privacy-policy.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-user-shield"></i> Privacy</a>
+        <a href="terms-conditions.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-file-contract"></i> Terms</a>
+    </div>
 </div>
 </footer>
 
