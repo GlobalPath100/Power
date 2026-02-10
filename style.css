@@ -1,0 +1,9 @@
+/* حل مشكلة قص الحروف المائلة (Italic) في العناوين */
+.italic {
+    padding-right: 0.15em;
+    padding-left: 0.15em;
+    padding-top: 0.1em; /* لمنع القص من الأعلى كما في حرف D */
+    margin-right: -0.15em;
+    margin-left: -0.15em;
+    display: inline-block; /* يضمن تطبيق المسافات بشكل صحيح على النص */
+}
