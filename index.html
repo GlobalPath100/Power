@@ -12,6 +12,13 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-bg { background: radial-gradient(circle at top right, #f8fafc, #eff6ff); }
+        
+        /* تنسيقات مخصصة للأدوات لضمان التناسق */
+        .tool-card { background: #ffffff; border-radius: 1.5rem; border: 1px solid #e2e8f0; padding: 2rem; shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .tool-input { width: 100%; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 1rem; color: #1e293b; }
+        .tool-btn { width: 100%; padding: 15px; background: linear-gradient(135deg, #2563eb, #7c3aed); border: none; border-radius: 10px; color: #fff; font-weight: bold; cursor: pointer; transition: opacity 0.2s; }
+        .tool-btn:hover { opacity: 0.9; }
+        .results-area { margin-top: 15px; padding: 15px; background: #eff6ff; border-radius: 12px; border-left: 4px solid #2563eb; display: none; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -66,30 +73,30 @@
             </article>
 
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
+                <div class="w-14 h-14 bg-blue-500 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-sun"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Spain Nomad Visa</h3>
                 <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">A deep dive into the 15% flat tax rate (Beckham Law).</p>
-                <a href="./spain-digital-nomad-visa.html" class="text-red-600 font-black text-xs uppercase tracking-widest border-b-2 border-red-200 hover:border-red-600 transition pb-1">Read Blueprint</a>
+                <a href="./spain-digital-nomad-visa.html" class="text-blue-500 font-black text-xs uppercase tracking-widest border-b-2 border-blue-200 hover:border-blue-600 transition pb-1">Read Blueprint</a>
             </article>
 
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-green-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
+                <div class="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-water"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Portugal Nomad Visa</h3>
                 <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Requirements for monthly income and residency.</p>
-                <a href="./portugal-digital-nomad-visa.html" class="text-green-600 font-black text-xs uppercase tracking-widest border-b-2 border-green-200 hover:border-green-600 transition pb-1">Read Blueprint</a>
+                <a href="./portugal-digital-nomad-visa.html" class="text-indigo-600 font-black text-xs uppercase tracking-widest border-b-2 border-indigo-200 hover:border-indigo-600 transition pb-1">Read Blueprint</a>
             </article>
 
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
+                <div class="w-14 h-14 bg-slate-700 rounded-2xl flex items-center justify-center mb-6 text-white text-xl">
                     <i class="fas fa-euro-sign"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Cheapest Nomad Visas</h3>
                 <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Compare costs across budget-friendly countries.</p>
-                <a href="./cheapest-digital-nomad-visas.html" class="text-yellow-600 font-black text-xs uppercase tracking-widest border-b-2 border-yellow-200 hover:border-yellow-600 transition pb-1">Read Blueprint</a>
+                <a href="./cheapest-digital-nomad-visas.html" class="text-slate-700 font-black text-xs uppercase tracking-widest border-b-2 border-slate-200 hover:border-slate-700 transition pb-1">Read Blueprint</a>
             </article>
 
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
@@ -118,12 +125,23 @@
             <h2 class="text-3xl font-black uppercase tracking-tighter italic">Scholarships</h2>
         </div>
         <div class="grid md:grid-cols-2 gap-8">
+            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
+                <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl group-hover:bg-blue-500 transition-colors">
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Winning Motivation Letter</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">
+                    Learn how to craft a compelling motivation letter that gets noticed by employers, scholarships, or remote work programs.
+                </p>
+                <a href="how-to-write-motivation-letter.html" class="text-blue-600 font-black text-xs uppercase tracking-widest border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">
+                    Read Full Guide
+                </a>
+            </article>
             <div class="p-12 border-2 border-dashed border-slate-200 rounded-[2rem] flex flex-col items-center justify-center text-slate-400">
                 <i class="fas fa-graduation-cap text-3xl mb-4"></i>
-                <p class="font-bold italic text-sm">Add your Scholarship content here...</p>
+                <p class="font-bold italic text-sm">More scholarships coming soon...</p>
             </div>
-
-            </div>
+        </div>
     </section>
 
     <section id="career" class="mb-24">
@@ -134,40 +152,82 @@
         <div class="grid gap-8">
             <div class="p-12 border-2 border-dashed border-slate-200 rounded-[2rem] flex flex-col items-center justify-center text-slate-400">
                 <i class="fas fa-briefcase text-3xl mb-4"></i>
-                <p class="font-bold italic text-sm">Add your Career & Jobs content here...</p>
+                <p class="font-bold italic text-sm">Add your Career & Jobs content....</p>
             </div>
-
-            </div>
+        </div>
     </section>
 
     <section id="tools" class="mb-24">
         <div class="flex items-center mb-12">
             <div class="w-10 h-1 bg-blue-600 mr-4"></div>
-            <h2 class="text-3xl font-black uppercase tracking-tighter italic">Tools</h2>
+            <h2 class="text-3xl font-black uppercase tracking-tighter italic">Migration & Tax Tools</h2>
         </div>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="p-8 border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center text-slate-400">
-                <i class="fas fa-tools text-2xl mb-4"></i>
-                <p class="font-bold italic text-xs uppercase tracking-widest">Tool Placeholder</p>
-            </div>
-            
-            <div class="p-8 border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center text-slate-400">
-                <i class="fas fa-tools text-2xl mb-4"></i>
-                <p class="font-bold italic text-xs uppercase tracking-widest">Tool Placeholder</p>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="tool-card">
+                <h3 class="text-xl font-extrabold mb-6 italic text-slate-800"><i class="fas fa-scale-balanced mr-2 text-blue-600"></i> Tax & Net Salary Engine</h3>
+                
+                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Work Country</label>
+                <select id="country" onchange="toggleGer()" class="tool-input">
+                    <option value="GER">Germany (EUR €)</option>
+                    <option value="USA">United States (USD $)</option>
+                    <option value="CAN">Canada (CAD $)</option>
+                    <option value="UAE">United Arab Emirates (AED)</option>
+                </select>
+                
+                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Annual Gross Salary</label>
+                <input type="number" id="gross" placeholder="e.g. 75000" class="tool-input">
+
+                <div id="gerOnly">
+                    <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Steuerklasse (Tax Class)</label>
+                    <select id="sClass" class="tool-input">
+                        <option value="1">Class 1: Single (Default)</option>
+                        <option value="2">Class 2: Single Parent</option>
+                        <option value="3">Class 3: Married (Highest Net)</option>
+                        <option value="4">Class 4: Married (Equal)</option>
+                        <option value="5">Class 5: Married (Lowest Net)</option>
+                    </select>
+                </div>
+
+                <button class="tool-btn" onclick="calcTax()">Calculate Results</button>
+
+                <div id="resTax" class="results-area">
+                    <div class="flex justify-between mb-2"><span>Monthly Net:</span><b id="mNet" class="text-blue-600">0</b></div>
+                    <div class="flex justify-between mb-2"><span>Annual Net:</span><b id="yNet" class="text-blue-600">0</b></div>
+                    <div class="flex justify-between"><span>Total Deductions:</span><b id="deduct" class="text-red-500">0</b></div>
+                </div>
             </div>
 
-            <div class="p-8 border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center text-slate-400">
-                <i class="fas fa-tools text-2xl mb-4"></i>
-                <p class="font-bold italic text-xs uppercase tracking-widest">Tool Placeholder</p>
-            </div>
+            <div class="tool-card">
+                <h3 class="text-xl font-extrabold mb-6 italic text-slate-800"><i class="fas fa-earth-americas mr-2 text-blue-600"></i> Relocation Budget Compare</h3>
+                
+                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Current City</label>
+                <select id="c1" class="tool-input"></select>
+                
+                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Target City</label>
+                <select id="c2" class="tool-input"></select>
 
+                <button class="tool-btn" onclick="calcComp()">Compare Budget</button>
+                
+                <div id="resComp" class="results-area">
+                    <div class="flex justify-between mb-2"><span>Cost Shift:</span><b id="shift" class="text-blue-600">0%</b></div>
+                    <div class="flex justify-between"><span>Local Market:</span><b id="market" class="text-blue-600">--</b></div>
+                </div>
             </div>
+        </div>
+
+        <div class="mt-8 p-6 bg-slate-100 rounded-2xl flex items-start gap-4 border border-slate-200">
+            <i class="fas fa-circle-info text-blue-600 mt-1"></i>
+            <p class="text-xs text-slate-600 leading-relaxed italic">
+                <strong>Legal Disclaimer:</strong> The calculated values are estimates for 2026. For Canada, deductions include federal tax and average provincial tax. German classes affect monthly liquidity. Please consult a professional advisor for precise legal and financial planning.
+            </p>
+        </div>
     </section>
 
 </main>
 
 <footer class="bg-white border-t border-slate-200 py-12">
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-4 text-center md:text-left">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-2xl font-black gradient-text tracking-tighter italic">GlobalPath.</div>
             <div class="flex flex-wrap justify-center items-center gap-8 text-slate-400">
@@ -194,13 +254,75 @@
 </footer>
 
 <script>
+    // Mobile Menu logic
     const btn = document.getElementById("menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
     btn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
     });
+
+    // Cities Data
+    const cities = [
+        { name: "Berlin, DE", cost: 3000, market: "High Demand" },
+        { name: "Toronto, CA", cost: 4100, market: "Very Expensive" },
+        { name: "Vancouver, CA", cost: 4300, market: "Extreme" },
+        { name: "Dubai, UAE", cost: 4200, market: "Fast Growing" },
+        { name: "New York, US", cost: 6000, market: "Extreme" },
+        { name: "Lisbon, PT", cost: 2400, market: "Competitive" }
+    ];
+
+    const s1 = document.getElementById('c1'); 
+    const s2 = document.getElementById('c2');
+    cities.forEach(c => { 
+        s1.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
+        s2.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
+    });
+
+    function toggleGer() { 
+        document.getElementById('gerOnly').style.display = (document.getElementById('country').value === 'GER') ? 'block' : 'none'; 
+    }
+
+    function calcTax() {
+        const country = document.getElementById('country').value;
+        const gross = parseFloat(document.getElementById('gross').value);
+        if(!gross) return alert("Please enter a salary amount");
+
+        let taxRate = 0; let socialRate = 0;
+        let symbol = (country === 'GER') ? "€" : (country === 'USA' ? "$" : (country === 'CAN' ? "C$" : "AED"));
+
+        if(country === 'GER') {
+            socialRate = 0.20; 
+            const sc = document.getElementById('sClass').value;
+            const classRates = { "1": 0.25, "2": 0.20, "3": 0.12, "4": 0.25, "5": 0.42 };
+            taxRate = classRates[sc];
+        } else if(country === 'USA') {
+            taxRate = 0.22; socialRate = 0.07;
+        } else if(country === 'CAN') {
+            taxRate = 0.20; 
+            socialRate = 0.05; 
+        } else {
+            taxRate = 0; socialRate = 0;
+        }
+
+        const totalDeductions = gross * (taxRate + socialRate);
+        const yNet = gross - totalDeductions;
+        
+        document.getElementById('mNet').innerText = Math.round(yNet/12).toLocaleString() + " " + symbol;
+        document.getElementById('yNet').innerText = Math.round(yNet).toLocaleString() + " " + symbol;
+        document.getElementById('deduct').innerText = Math.round(totalDeductions).toLocaleString() + " " + symbol;
+        document.getElementById('resTax').style.display = 'block';
+    }
+
+    function calcComp() {
+        const v1 = document.getElementById('c1').value;
+        const v2 = document.getElementById('c2').value;
+        const city2 = cities.find(c => c.cost == v2);
+        const diff = ((v2 - v1) / v1 * 100).toFixed(0);
+        document.getElementById('shift').innerText = (diff > 0 ? "+" : "") + diff + "%";
+        document.getElementById('market').innerText = city2.market;
+        document.getElementById('resComp').style.display = 'block';
+    }
 </script>
 
 </body>
 </html>
-
