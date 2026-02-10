@@ -1,69 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About Us | GlobalPath</title>
-  <meta name="description" content="Learn about GlobalPath, our mission, vision, and team helping remote workers and students achieve global opportunities.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | GlobalPath - Empowering Global Mobility</title>
+    <meta name="description" content="Discover GlobalPath's mission to empower remote workers and students with expert visa guides, scholarship resources, and global career insights.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-card { background: white; border: 1px solid #e2e8f0; border-radius: 1.5rem; padding: 2.5rem; transition: all 0.3s ease; }
+        .section-card:hover { border-color: #2563eb; shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
 
-<article class="max-w-4xl mx-auto px-4 py-16">
-
-  <!-- Header -->
-  <header class="mb-12 text-center">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">About GlobalPath</h1>
-    <p class="text-lg text-slate-500 max-w-2xl mx-auto">
-      Guiding remote workers, students, and professionals towards global opportunities and life-changing experiences.
-    </p>
-  </header>
-
-  <!-- Our Mission -->
-  <section class="mb-12">
-    <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
-    <p class="leading-relaxed text-slate-700">
-      At GlobalPath, our mission is to simplify the journey of remote work and international education.
-      We provide actionable guides, step-by-step resources, and expert insights to help our audience 
-      secure visas, scholarships, and career opportunities worldwide.
-    </p>
-  </section>
-
-  <!-- Our Vision -->
-  <section class="mb-12">
-    <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
-    <p class="leading-relaxed text-slate-700">
-      We envision a world where talented professionals and students can explore, work, and study anywhere,
-      without being limited by borders. Our goal is to empower our users with knowledge and confidence 
-      to thrive globally.
-    </p>
-  </section>
-
-  <!-- Our Team -->
-  <section class="mb-12">
-    <h2 class="text-3xl font-bold mb-4">Our Team</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-xl mb-2">Carter</h3>
-        <p class="text-slate-500">Founder & Lead Strategist. Passionate about remote work, digital nomad life, and international education.</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition">
-        <h3 class="font-bold text-xl mb-2">Our Experts</h3>
-        <p class="text-slate-500">Team of researchers, visa consultants, and education specialists ensuring our guides are accurate and up-to-date.</p>
-      </div>
+<nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+        <span class="text-2xl font-extrabold gradient-text tracking-tighter italic">GlobalPath.</span>
+        <div class="flex items-center">
+            <a href="index.html" class="text-slate-600 hover:text-blue-600 transition text-xl px-4 py-2" title="Home">
+                <i class="fas fa-house"></i>
+            </a>
+        </div>
     </div>
-  </section>
+</nav>
 
-  <!-- Why Choose Us -->
-  <section class="mb-12">
-    <h2 class="text-3xl font-bold mb-4">Why Choose GlobalPath?</h2>
-    <ul class="list-disc pl-6 space-y-2 text-slate-700">
-      <li>Expertly curated guides and resources</li>
-      <li>Practical, step-by-step instructions for visas and scholarships</li>
-      <li>Focus on digital nomads, remote workers, and global students</li>
-      <li>Trusted by thousands of professionals worldwide</li>
-    </ul>
+<header class="py-20 px-4 text-center bg-white border-b border-slate-100">
+    <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tighter italic">
+            About <span class="gradient-text">GlobalPath</span>
+        </h1>
+        <p class="text-lg text-slate-500 mb-8 font-medium">
+            Guiding remote workers, students, and professionals towards global opportunities and life-changing experiences.
+        </p>
+    </div>
+</header>
 
-  </section>
+<main class="max-w-4xl mx-auto px-4 py-16 space-y-12">
+
+    <div class="grid md:grid-cols-2 gap-8">
+        <section class="section-card">
+            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-bullseye text-2xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold mb-4 italic text-slate-900">Our Mission</h2>
+            <p class="text-slate-600">
+                At GlobalPath, our mission is to simplify the journey of remote work and international education. We provide actionable guides, step-by-step resources, and expert insights to help our audience secure visas, scholarships, and career opportunities worldwide.
+            </p>
+        </section>
+
+        <section class="section-card">
+            <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-eye text-2xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold mb-4 italic text-slate-900">Our Vision</h2>
+            <p class="text-slate-600">
+                We envision a world where talented professionals and students can explore, work, and study anywhere, without being limited by borders. Our goal is to empower our users with knowledge and confidence to thrive globally.
+            </p>
+        </section>
+    </div>
+
+    <section class="section-card">
+        <h2 class="text-2xl font-bold mb-8 italic text-slate-900 border-b pb-4">Our Professional Expertise</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div>
+                <h3 class="font-bold text-blue-600 text-lg mb-2 underline decoration-2 underline-offset-4">Leadership Team</h3>
+                <p class="text-slate-600">
+                    Our leadership consists of seasoned specialists in digital nomadism and international education, focused on delivering high-quality, original content that meets global publishing standards.
+                </p>
+            </div>
+            <div>
+                <h3 class="font-bold text-blue-600 text-lg mb-2 underline decoration-2 underline-offset-4">Subject Matter Experts</h3>
+                <p class="text-slate-600">
+                    A dedicated team of researchers, visa consultants, and education specialists who ensure every guide is accurate, verified, and updated according to the latest 2026 regulations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <h2 class="text-2xl font-bold mb-8 italic text-slate-900 text-center">Why Trust GlobalPath?</h2>
+        <div class="grid sm:grid-cols-2 gap-6">
+            <div class="flex gap-4 items-start">
+                <i class="fas fa-shield-check text-green-500 text-xl mt-1"></i>
+                <p class="text-slate-700"><strong>Expertly Curated:</strong> All resources are thoroughly researched by industry experts.</p>
+            </div>
+            <div class="flex gap-4 items-start">
+                <i class="fas fa-map-signs text-blue-500 text-xl mt-1"></i>
+                <p class="text-slate-700"><strong>Practical Guidance:</strong> Clear, step-by-step instructions for visas and scholarships.</p>
+            </div>
+            <div class="flex gap-4 items-start">
+                <i class="fas fa-users-gear text-purple-500 text-xl mt-1"></i>
+                <p class="text-slate-700"><strong>Niche Focus:</strong> Specialized content for digital nomads and global students.</p>
+            </div>
+            <div class="flex gap-4 items-start">
+                <i class="fas fa-globe-americas text-indigo-500 text-xl mt-1"></i>
+                <p class="text-slate-700"><strong>Global Reach:</strong> Trusted by thousands of professionals pursuing international careers.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-white border-t border-slate-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-6">
+        <p class="text-slate-400 text-sm italic font-medium">© 2026 GlobalPath. All rights reserved.</p>
+        <div class="flex flex-wrap justify-center gap-8 text-slate-400">
+            <a href="about-us.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-info-circle"></i> About</a>
+            <a href="contact-us.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="privacy-policy.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-user-shield"></i> Privacy</a>
+            <a href="terms-conditions.html" class="hover:text-blue-600 transition flex items-center gap-2 font-bold text-[10px] uppercase tracking-widest"><i class="fas fa-file-contract"></i> Terms</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
