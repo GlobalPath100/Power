@@ -11,6 +11,7 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .article-card { background: white; border: 1px solid #e2e8f0; border-radius: 1.5rem; padding: 2.5rem; margin-bottom: 2rem; }
         .faq-question { cursor: pointer; }
+        .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
     <script>
         function toggleFaq(id) {
@@ -33,11 +34,10 @@
         <h1 class="text-4xl md:text-5xl font-extrabold mb-6 italic tracking-tight">
             The <span class="text-blue-600">Chevening Scholarship</span> Guide 2026
         </h1>
-        <p class="text-lg text-slate-500">Master's Degrees in the UK for Future Global Leaders.</p>
+        <p class="text-lg text-slate-500 italic font-medium">Your Ultimate Roadmap to Securing Fully-Funded Master's Degrees in the United Kingdom.</p>
     </div>
 </header>
 
-<!-- FEATURED IMAGE -->
 <section class="max-w-5xl mx-auto px-4 my-12">
     <img
         src="https://images.pexels.com/photos/4144176/pexels-photo-4144176.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -49,116 +49,183 @@
 <main class="max-w-4xl mx-auto px-4 py-16">
 
     <section class="article-card">
-        <h2 class="text-2xl font-bold mb-4 italic">Introduction to Chevening</h2>
-        <p class="text-slate-700">
-            Chevening is the UK government’s international awards program aimed at developing global leaders. Funded by the Foreign, Commonwealth and Development Office (FCDO), Chevening offers a unique opportunity for future leaders, influencers, and decision-makers from all over the world to develop professionally and academically.
+        <h2 class="text-2xl font-bold mb-4 italic flex items-center gap-3">
+            <span class="w-8 h-1 bg-blue-600"></span> Introduction to Chevening
+        </h2>
+        <p class="text-slate-700 text-lg mb-6">
+            The <strong>Chevening Scholarship</strong> stands as the UK government’s most prestigious international awards program. Funded by the Foreign, Commonwealth and Development Office (FCDO) and partner organizations, it is specifically designed to identify and support future leaders, influencers, and decision-makers from across the globe. 
+        </p>
+        <p class="text-slate-700 text-lg">
+            In 2026, the program continues to offer a life-changing opportunity for professionals to pursue a one-year Master’s degree at any of the UK's world-class universities. Beyond the academic excellence, Chevening provides access to a powerful global network of over 55,000 alumni, fostering professional growth that lasts a lifetime.
         </p>
     </section>
 
-    <section class="article-card border-l-8 border-blue-600">
-        <h2 class="text-2xl font-bold mb-4 italic">Full Coverage Details</h2>
+    <section class="article-card border-l-8 border-blue-600 bg-slate-900 text-white">
+        <h2 class="text-2xl font-bold mb-6 italic text-blue-400">Full Coverage Details: A "Full Ride" Program</h2>
+        <p class="text-slate-300 mb-6">Chevening is a fully-funded scholarship, meaning scholars can focus entirely on their studies and networking without financial stress. The 2026 package includes:</p>
         <div class="grid md:grid-cols-2 gap-4">
             <div class="flex gap-2">
-                <i class="fas fa-check-circle text-blue-600 mt-1"></i>
-                <p><strong>Tuition:</strong> Full payment of university tuition fees.</p>
+                <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                <p><strong>Tuition:</strong> Full payment of university tuition fees (including MBA caps).</p>
             </div>
             <div class="flex gap-2">
-                <i class="fas fa-check-circle text-blue-600 mt-1"></i>
-                <p><strong>Living:</strong> A monthly stipend to cover housing and meals.</p>
+                <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                <p><strong>Living Stipend:</strong> A monthly allowance tailored to London or provincial rates.</p>
             </div>
             <div class="flex gap-2">
-                <i class="fas fa-check-circle text-blue-600 mt-1"></i>
-                <p><strong>Travel:</strong> Economy class flights to and from the UK.</p>
+                <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                <p><strong>Travel:</strong> Round-trip economy class flights to the UK.</p>
             </div>
             <div class="flex gap-2">
-                <i class="fas fa-check-circle text-blue-600 mt-1"></i>
-                <p><strong>Arrival:</strong> An arrival allowance and cost of visa application.</p>
+                <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                <p><strong>Arrivals:</strong> Allowance for visa fees, TB testing, and initial settling-in.</p>
             </div>
         </div>
     </section>
 
     <section class="article-card">
-        <h2 class="text-2xl font-bold mb-6 italic">Critical Success Factors: The Four Essays</h2>
-        <p class="text-slate-700 mb-6">The heart of the Chevening application lies in four mandatory essays (500 words each):</p>
+        <h2 class="text-2xl font-bold mb-6 italic text-blue-600">Strict Eligibility Criteria 2026</h2>
+        <p class="text-slate-700 mb-6">To be considered for a Chevening Award, you must meet the following mandatory requirements:</p>
         <div class="space-y-6">
             <div class="p-6 bg-slate-50 rounded-2xl">
-                <h4 class="font-bold text-slate-900 mb-2">1. Leadership and Influence</h4>
-                <p class="text-slate-600">You must describe your leadership skills and provide clear examples of how you have influenced others in your career or community.</p>
+                <h4 class="font-bold text-slate-900 mb-2 underline">Work Experience Requirement</h4>
+                <p class="text-slate-600">You must have completed at least <strong>2,800 hours</strong> of work experience. This includes full-time employment, part-time work, voluntary work, and paid or unpaid internships. Chevening looks for quality experience that demonstrates your professional trajectory.</p>
             </div>
             <div class="p-6 bg-slate-50 rounded-2xl">
-                <h4 class="font-bold text-slate-900 mb-2">2. Networking</h4>
-                <p class="text-slate-600">Focus on how you build and maintain professional relationships and how you plan to use the Chevening network in the future.</p>
+                <h4 class="font-bold text-slate-900 mb-2 underline">Academic Background</h4>
+                <p class="text-slate-600">An undergraduate degree that will enable you to gain entry to a postgraduate program at a UK university. This is typically equivalent to an upper second-class 2:1 honours degree in the UK.</p>
             </div>
             <div class="p-6 bg-slate-50 rounded-2xl">
-                <h4 class="font-bold text-slate-900 mb-2">3. Studying in the UK</h4>
-                <p class="text-slate-600">Explain why you chose your three specific Master's courses and how they fit into your academic background.</p>
-            </div>
-            <div class="p-6 bg-slate-50 rounded-2xl">
-                <h4 class="font-bold text-slate-900 mb-2">4. Career Plan</h4>
-                <p class="text-slate-600">Describe your short-term and long-term career goals and how the scholarship will help you achieve them back home.</p>
+                <h4 class="font-bold text-slate-900 mb-2 underline">Return Home Policy</h4>
+                <p class="text-slate-600">Scholars are required to return to their country of citizenship for a minimum of <strong>two years</strong> after their award has ended. This ensures that the skills gained in the UK benefit the scholar’s home community.</p>
             </div>
         </div>
     </section>
 
-    <section class="article-card bg-red-50 border-red-100">
-        <h2 class="text-2xl font-bold mb-4 italic text-red-900">Application Timeline 2026</h2>
-        <ul class="space-y-4 text-red-900">
-            <li><strong>August - November:</strong> Application window open.</li>
-            <li><strong>February:</strong> Shortlisting for interviews.</li>
-            <li><strong>March - May:</strong> Interview period at UK embassies.</li>
-            <li><strong>June:</strong> Final results announced.</li>
-            <li><strong>September/October:</strong> Studies begin in the UK.</li>
+    <section class="article-card">
+        <h2 class="text-2xl font-bold mb-6 italic text-blue-600">The Four Essays: Your Winning Strategy</h2>
+        <p class="text-slate-700 mb-8">The most critical part of the application is the four 500-word essays. Here is how to master each:</p>
+        
+        <div class="space-y-8">
+            <div>
+                <h4 class="font-extrabold text-slate-900 flex items-center gap-2">
+                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">1</span>
+                    Leadership & Influence
+                </h4>
+                <p class="text-slate-600 mt-2 ml-8">Don't just list titles. Use the <strong>STAR method</strong> (Situation, Task, Action, Result) to describe a specific time you led a team or influenced a change. Show, don't just tell, how you negotiate and resolve conflicts.</p>
+            </div>
+
+            <div>
+                <h4 class="font-extrabold text-slate-900 flex items-center gap-2">
+                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span>
+                    Networking
+                </h4>
+                <p class="text-slate-600 mt-2 ml-8">Explain how you currently network locally and internationally. Most importantly, explain how you will use the Chevening network to achieve your goals and how you will contribute to the UK’s relationship with your country.</p>
+            </div>
+
+            <div>
+                <h4 class="font-extrabold text-slate-900 flex items-center gap-2">
+                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">3</span>
+                    Studying in the UK
+                </h4>
+                <p class="text-slate-600 mt-2 ml-8">Choose three courses at three different universities (or three at one). Explain why the UK is the right destination for your specific subject and how these courses align with your previous academic background.</p>
+            </div>
+
+            <div>
+                <h4 class="font-extrabold text-slate-900 flex items-center gap-2">
+                    <span class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">4</span>
+                    Career Plan
+                </h4>
+                <p class="text-slate-600 mt-2 ml-8">Be specific. Outline your 1-year, 5-year, and 10-year plans. How will your UK degree act as a catalyst for these goals? Relate your plans to your country’s development priorities or the UK’s priority areas in your region.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-card bg-blue-50 border-blue-100">
+        <h2 class="text-2xl font-bold mb-4 italic text-blue-900">Application Timeline 2026</h2>
+        <div class="space-y-4">
+            <div class="flex items-center gap-4">
+                <span class="font-black text-blue-600 w-32">AUG - NOV</span>
+                <span class="text-slate-700">Online application window opens on the Chevening portal.</span>
+            </div>
+            <hr class="border-blue-200">
+            <div class="flex items-center gap-4">
+                <span class="font-black text-blue-600 w-32">FEB</span>
+                <span class="text-slate-700">Independent reading committees shortlist candidates for interviews.</span>
+            </div>
+            <hr class="border-blue-200">
+            <div class="flex items-center gap-4">
+                <span class="font-black text-blue-600 w-32">MAR - MAY</span>
+                <span class="text-slate-700">In-person or virtual interviews at British Embassies or High Commissions.</span>
+            </div>
+            <hr class="border-blue-200">
+            <div class="flex items-center gap-4">
+                <span class="font-black text-blue-600 w-32">JUNE</span>
+                <span class="text-slate-700">Announcement of selection results (Conditional, Provisional, or Reserve).</span>
+            </div>
+            <hr class="border-blue-200">
+            <div class="flex items-center gap-4">
+                <span class="font-black text-blue-600 w-32">SEP/OCT</span>
+                <span class="text-slate-700">Travel to the UK and commencement of your Master's journey.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-card border-l-4 border-blue-600">
+        <h2 class="text-2xl font-bold mb-4 italic text-blue-600">The Interview Stage</h2>
+        <p class="text-slate-700 mb-4">
+            If you are invited to an interview, you are among the top 10% of applicants. The interview is a dialogue to expand on your essays.
+        </p>
+        <ul class="list-disc list-inside text-slate-600 space-y-2">
+            <li>Bring a copy of your application; questions will be based on your essays.</li>
+            <li>Research current events regarding UK relations with your country.</li>
+            <li>Prepare for follow-up questions on your "Plan B" if your first-choice university is full.</li>
+            <li>Dress professionally and maintain a confident, leadership-oriented mindset.</li>
         </ul>
     </section>
 
-    <!-- ✅ FAQ SECTION -->
     <section class="article-card">
-        <h2 class="text-2xl font-bold mb-6 italic">Frequently Asked Questions (FAQ)</h2>
+        <h2 class="text-2xl font-bold mb-8 italic text-center underline decoration-blue-200 underline-offset-8">Frequently Asked Questions</h2>
 
         <div class="space-y-4">
-            <div>
-                <p class="faq-question font-bold text-blue-600" onclick="toggleFaq('faq1')">
-                    <i class="fas fa-question-circle mr-2"></i> Who is eligible for Chevening Scholarship?
-                </p>
-                <p id="faq1" class="text-slate-700 hidden mt-2">
-                    Applicants must be citizens of eligible countries, hold a bachelor’s degree, have at least 2 years of work experience, and demonstrate leadership potential.
-                </p>
+            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                <div onclick="toggleFaq('faq1')" class="faq-question p-5 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition">
+                    <span class="font-bold text-blue-600">Who is eligible for Chevening Scholarship?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </div>
+                <div id="faq1" class="hidden p-5 border-t border-slate-200 text-slate-700">
+                    Applicants must be citizens of an eligible country, hold a Bachelor’s degree, have 2 years of work experience, and have not previously studied in the UK via a government-funded scholarship.
+                </div>
             </div>
 
-            <div>
-                <p class="faq-question font-bold text-blue-600" onclick="toggleFaq('faq2')">
-                    <i class="fas fa-question-circle mr-2"></i> How much does the scholarship cover?
-                </p>
-                <p id="faq2" class="text-slate-700 hidden mt-2">
-                    Chevening is fully funded, covering tuition, living stipend, travel costs, visa, and arrival allowance.
-                </p>
+            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                <div onclick="toggleFaq('faq2')" class="faq-question p-5 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition">
+                    <span class="font-bold text-blue-600">Does Chevening cover my dependents?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </div>
+                <div id="faq2" class="hidden p-5 border-t border-slate-200 text-slate-700">
+                    No. Chevening provides a stipend for the scholar only. While you can bring family members, you must prove you have the independent financial means to support them and pay for their visas and healthcare.
+                </div>
             </div>
 
-            <div>
-                <p class="faq-question font-bold text-blue-600" onclick="toggleFaq('faq3')">
-                    <i class="fas fa-question-circle mr-2"></i> Can I apply for multiple universities?
-                </p>
-                <p id="faq3" class="text-slate-700 hidden mt-2">
-                    Yes, you can select up to three eligible UK Master’s courses during your application.
-                </p>
+            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                <div onclick="toggleFaq('faq3')" class="faq-question p-5 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition">
+                    <span class="font-bold text-blue-600">Can I apply for a second Master's degree?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </div>
+                <div id="faq3" class="hidden p-5 border-t border-slate-200 text-slate-700">
+                    Yes, provided you can clearly explain how a second Master's degree in the UK will fulfill your career goals and development impact in a way your first degree cannot.
+                </div>
             </div>
 
-            <div>
-                <p class="faq-question font-bold text-blue-600" onclick="toggleFaq('faq4')">
-                    <i class="fas fa-question-circle mr-2"></i> Do I need to know English fluently?
-                </p>
-                <p id="faq4" class="text-slate-700 hidden mt-2">
-                    You must demonstrate English proficiency via IELTS, TOEFL, or other approved tests as per your course requirement.
-                </p>
-            </div>
-
-            <div>
-                <p class="faq-question font-bold text-blue-600" onclick="toggleFaq('faq5')">
-                    <i class="fas fa-question-circle mr-2"></i> Can Chevening scholarship be deferred?
-                </p>
-                <p id="faq5" class="text-slate-700 hidden mt-2">
-                    Generally, deferrals are not allowed, but exceptional cases may be considered by the Chevening Secretariat.
-                </p>
+            <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                <div onclick="toggleFaq('faq4')" class="faq-question p-5 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition">
+                    <span class="font-bold text-blue-600">Is there an age limit for Chevening?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </div>
+                <div id="faq4" class="hidden p-5 border-t border-slate-200 text-slate-700">
+                    No. There is no upper age limit for the Chevening Scholarship. Applicants of all ages are welcome as long as they meet the leadership and work experience requirements.
+                </div>
             </div>
         </div>
     </section>
@@ -193,5 +260,5 @@
 </footer>
 
 </body>
-
 </html>
+
