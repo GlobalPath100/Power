@@ -8,26 +8,23 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-bg { background: radial-gradient(circle at top right, #f8fafc, #eff6ff); }
         
-        /* التنسيقات المخصصة للأدوات */
+        /* تنسيقات مخصصة للأدوات لضمان التناسق الكامل */
         .tool-card { background: #ffffff; border-radius: 1.5rem; border: 1px solid #e2e8f0; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
         .tool-input { width: 100%; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 1rem; color: #1e293b; outline: none; }
         .tool-btn { width: 100%; padding: 15px; background: linear-gradient(135deg, #2563eb, #7c3aed); border: none; border-radius: 10px; color: #fff; font-weight: bold; cursor: pointer; transition: opacity 0.2s; }
         .tool-btn:hover { opacity: 0.9; }
         .results-area { margin-top: 15px; padding: 15px; background: #eff6ff; border-radius: 12px; border-left: 4px solid #2563eb; display: none; }
-        
-        /* ضمان عدم اختفاء النصوص قبل تحميل الخط */
-        .font-loaded body { opacity: 1; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -295,7 +292,7 @@
 </footer>
 
 <script>
-    // قائمة المدن والمنطق البرمجي
+    // تهيئة البيانات والتحكم في القائمة
     const cities = [
         { name: "Berlin, DE", cost: 3000, market: "High Demand" },
         { name: "Toronto, CA", cost: 4100, market: "Very Expensive" },
@@ -327,7 +324,7 @@
         const gross = parseFloat(document.getElementById('gross').value);
         if(!gross) return alert("Please enter amount");
         let taxRate = 0.22, socialRate = 0.07;
-        let symbol = (country === 'GER') ? "€" : "$";
+        let symbol = (country === 'GER') ? "€" : (country === 'USA' ? "$" : (country === 'CAN' ? "C$" : "AED"));
         if(country === 'GER') {
             socialRate = 0.20;
             const rates = { "1": 0.25, "2": 0.20, "3": 0.12, "4": 0.25, "5": 0.42 };
@@ -354,4 +351,3 @@
 
 </body>
 </html>
-
