@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlobalPath | Visa Guides, Scholarships & Career Excellence</title>
     <meta name="description" content="Your ultimate resource for Digital Nomad Visas, Fully Funded Scholarships, and International Career Growth.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-bg { background: radial-gradient(circle at top right, #f8fafc, #eff6ff); }
         
-        /* تنسيقات مخصصة للأدوات لضمان التناسق */
-        .tool-card { background: #ffffff; border-radius: 1.5rem; border: 1px solid #e2e8f0; padding: 2rem; shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-        .tool-input { width: 100%; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 1rem; color: #1e293b; }
+        /* التنسيقات المخصصة للأدوات */
+        .tool-card { background: #ffffff; border-radius: 1.5rem; border: 1px solid #e2e8f0; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .tool-input { width: 100%; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 1rem; color: #1e293b; outline: none; }
         .tool-btn { width: 100%; padding: 15px; background: linear-gradient(135deg, #2563eb, #7c3aed); border: none; border-radius: 10px; color: #fff; font-weight: bold; cursor: pointer; transition: opacity 0.2s; }
         .tool-btn:hover { opacity: 0.9; }
         .results-area { margin-top: 15px; padding: 15px; background: #eff6ff; border-radius: 12px; border-left: 4px solid #2563eb; display: none; }
+        
+        /* ضمان عدم اختفاء النصوص قبل تحميل الخط */
+        .font-loaded body { opacity: 1; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -130,12 +139,8 @@
                     <i class="fas fa-pen-nib"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Motivation Letter Guide</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">
-                    Master the art of writing a winning statement for global programs.
-                </p>
-                <a href="how-to-write-motivation-letter.html" class="text-blue-600 font-black text-xs uppercase tracking-widest border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">
-                    Read Guide
-                </a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Master the art of writing a winning statement for global programs.</p>
+                <a href="how-to-write-motivation-letter.html" class="text-blue-600 font-black text-xs uppercase tracking-widest border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">Read Guide</a>
             </article>
 
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
@@ -143,12 +148,8 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">DAAD Scholarship Germany</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">
-                    The ultimate comprehensive guide to Master's and PhD funding in Germany.
-                </p>
-                <a href="daad-scholarship-germany.html" class="text-blue-600 font-black text-xs uppercase tracking-widest border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">
-                    View Scholarship
-                </a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">The ultimate comprehensive guide to Master's and PhD funding in Germany.</p>
+                <a href="daad-scholarship-germany.html" class="text-blue-600 font-black text-xs uppercase tracking-widest border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">View Scholarship</a>
             </article>
 
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
@@ -156,12 +157,8 @@
                     <i class="fas fa-landmark"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Chevening Scholarship UK</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">
-                    Official 2026 application guide for future global leaders in the UK.
-                </p>
-                <a href="chevening-scholarship-uk.html" class="text-purple-600 font-black text-xs uppercase tracking-widest border-b-2 border-purple-100 hover:border-purple-600 transition pb-1">
-                    View Scholarship
-                </a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Official 2026 application guide for future global leaders in the UK.</p>
+                <a href="chevening-scholarship-uk.html" class="text-purple-600 font-black text-xs uppercase tracking-widest border-b-2 border-purple-100 hover:border-purple-600 transition pb-1">View Scholarship</a>
             </article>
 
             <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
@@ -169,12 +166,8 @@
                     <i class="fas fa-torii-gate"></i>
                 </div>
                 <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">MEXT Japan Scholarship</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">
-                    Fully-funded government opportunity to study in the Land of the Rising Sun.
-                </p>
-                <a href="mext-scholarship-japan.html" class="text-red-600 font-black text-xs uppercase tracking-widest border-b-2 border-red-200 hover:border-red-600 transition pb-1">
-                    View Scholarship
-                </a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 italic font-medium">Fully-funded government opportunity to study in Japan.</p>
+                <a href="mext-scholarship-japan.html" class="text-red-600 font-black text-xs uppercase tracking-widest border-b-2 border-red-200 hover:border-red-600 transition pb-1">View Scholarship</a>
             </article>
         </div>
     </section>
@@ -186,36 +179,28 @@
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg">
-                    <i class="fas fa-file-invoice"></i>
-                </div>
+                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-file-invoice"></i></div>
                 <h3 class="text-lg font-extrabold mb-2 italic uppercase tracking-tight">Resume Optimization</h3>
                 <p class="text-slate-500 text-xs leading-relaxed mb-4 italic font-medium">Master ATS algorithms for remote roles.</p>
                 <a href="remote-work-resume-optimization.html" class="text-blue-600 font-black text-[10px] uppercase tracking-widest border-b border-blue-100 hover:border-blue-600 transition pb-1">Read Guide</a>
             </article>
 
             <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-4 text-white text-lg">
-                    <i class="fas fa-rocket"></i>
-                </div>
+                <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-rocket"></i></div>
                 <h3 class="text-lg font-extrabold mb-2 italic uppercase tracking-tight">High-Paying Careers</h3>
                 <p class="text-slate-500 text-xs leading-relaxed mb-4 italic font-medium">Top 2026 roles for digital nomads.</p>
                 <a href="high-paying-remote-careers.html" class="text-blue-600 font-black text-[10px] uppercase tracking-widest border-b border-blue-100 hover:border-blue-600 transition pb-1">Read Guide</a>
             </article>
 
             <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg">
-                    <i class="fas fa-video"></i>
-                </div>
+                <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-video"></i></div>
                 <h3 class="text-lg font-extrabold mb-2 italic uppercase tracking-tight">Virtual Interviews</h3>
                 <p class="text-slate-500 text-xs leading-relaxed mb-4 italic font-medium">Ace global interviews from home.</p>
                 <a href="master-virtual-interview.html" class="text-purple-600 font-black text-[10px] uppercase tracking-widest border-b border-purple-100 hover:border-purple-600 transition pb-1">Read Guide</a>
             </article>
 
             <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg">
-                    <i class="fas fa-heart-pulse"></i>
-                </div>
+                <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-heart-pulse"></i></div>
                 <h3 class="text-lg font-extrabold mb-2 italic uppercase tracking-tight">Global Insurance</h3>
                 <p class="text-slate-500 text-xs leading-relaxed mb-4 italic font-medium">Protect your health across borders.</p>
                 <a href="global-health-insurance-nomads.html" class="text-red-600 font-black text-[10px] uppercase tracking-widest border-b border-red-100 hover:border-red-600 transition pb-1">Read Guide</a>
@@ -232,7 +217,6 @@
         <div class="grid md:grid-cols-2 gap-8">
             <div class="tool-card">
                 <h3 class="text-xl font-extrabold mb-6 italic text-slate-800"><i class="fas fa-scale-balanced mr-2 text-blue-600"></i> Tax & Net Salary Engine</h3>
-                
                 <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Work Country</label>
                 <select id="country" onchange="toggleGer()" class="tool-input">
                     <option value="GER">Germany (EUR €)</option>
@@ -240,23 +224,19 @@
                     <option value="CAN">Canada (CAD $)</option>
                     <option value="UAE">United Arab Emirates (AED)</option>
                 </select>
-                
                 <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Annual Gross Salary</label>
                 <input type="number" id="gross" placeholder="e.g. 75000" class="tool-input">
-
                 <div id="gerOnly">
                     <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Steuerklasse (Tax Class)</label>
                     <select id="sClass" class="tool-input">
-                        <option value="1">Class 1: Single (Default)</option>
+                        <option value="1">Class 1: Single</option>
                         <option value="2">Class 2: Single Parent</option>
-                        <option value="3">Class 3: Married (Highest Net)</option>
+                        <option value="3">Class 3: Married</option>
                         <option value="4">Class 4: Married (Equal)</option>
                         <option value="5">Class 5: Married (Lowest Net)</option>
                     </select>
                 </div>
-
                 <button class="tool-btn" onclick="calcTax()">Calculate Results</button>
-
                 <div id="resTax" class="results-area">
                     <div class="flex justify-between mb-2"><span>Monthly Net:</span><b id="mNet" class="text-blue-600">0</b></div>
                     <div class="flex justify-between mb-2"><span>Annual Net:</span><b id="yNet" class="text-blue-600">0</b></div>
@@ -266,26 +246,21 @@
 
             <div class="tool-card">
                 <h3 class="text-xl font-extrabold mb-6 italic text-slate-800"><i class="fas fa-earth-americas mr-2 text-blue-600"></i> Relocation Budget Compare</h3>
-                
                 <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Current City</label>
                 <select id="c1" class="tool-input"></select>
-                
                 <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Target City</label>
                 <select id="c2" class="tool-input"></select>
-
                 <button class="tool-btn" onclick="calcComp()">Compare Budget</button>
-                
                 <div id="resComp" class="results-area">
                     <div class="flex justify-between mb-2"><span>Cost Shift:</span><b id="shift" class="text-blue-600">0%</b></div>
                     <div class="flex justify-between"><span>Local Market:</span><b id="market" class="text-blue-600">--</b></div>
                 </div>
             </div>
         </div>
-
         <div class="mt-8 p-6 bg-slate-100 rounded-2xl flex items-start gap-4 border border-slate-200">
             <i class="fas fa-circle-info text-blue-600 mt-1"></i>
             <p class="text-xs text-slate-600 leading-relaxed italic">
-                <strong>Legal Disclaimer:</strong> The calculated values are estimates for 2026. For Canada, deductions include federal tax and average provincial tax. German classes affect monthly liquidity. Please consult a professional advisor for precise legal and financial planning.
+                <strong>Legal Disclaimer:</strong> Estimates for 2026. Consult a professional for precise legal planning.
             </p>
         </div>
     </section>
@@ -320,14 +295,7 @@
 </footer>
 
 <script>
-    // Mobile Menu logic
-    const btn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    btn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-    });
-
-    // Cities Data
+    // قائمة المدن والمنطق البرمجي
     const cities = [
         { name: "Berlin, DE", cost: 3000, market: "High Demand" },
         { name: "Toronto, CA", cost: 4100, market: "Very Expensive" },
@@ -337,11 +305,17 @@
         { name: "Lisbon, PT", cost: 2400, market: "Competitive" }
     ];
 
-    const s1 = document.getElementById('c1'); 
-    const s2 = document.getElementById('c2');
-    cities.forEach(c => { 
-        s1.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
-        s2.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
+    document.addEventListener("DOMContentLoaded", () => {
+        const s1 = document.getElementById('c1'); 
+        const s2 = document.getElementById('c2');
+        cities.forEach(c => { 
+            s1.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
+            s2.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
+        });
+
+        document.getElementById("menu-btn").onclick = () => {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        };
     });
 
     function toggleGer() { 
@@ -351,31 +325,19 @@
     function calcTax() {
         const country = document.getElementById('country').value;
         const gross = parseFloat(document.getElementById('gross').value);
-        if(!gross) return alert("Please enter a salary amount");
-
-        let taxRate = 0; let socialRate = 0;
-        let symbol = (country === 'GER') ? "€" : (country === 'USA' ? "$" : (country === 'CAN' ? "C$" : "AED"));
-
+        if(!gross) return alert("Please enter amount");
+        let taxRate = 0.22, socialRate = 0.07;
+        let symbol = (country === 'GER') ? "€" : "$";
         if(country === 'GER') {
-            socialRate = 0.20; 
-            const sc = document.getElementById('sClass').value;
-            const classRates = { "1": 0.25, "2": 0.20, "3": 0.12, "4": 0.25, "5": 0.42 };
-            taxRate = classRates[sc];
-        } else if(country === 'USA') {
-            taxRate = 0.22; socialRate = 0.07;
-        } else if(country === 'CAN') {
-            taxRate = 0.20; 
-            socialRate = 0.05; 
-        } else {
-            taxRate = 0; socialRate = 0;
-        }
-
-        const totalDeductions = gross * (taxRate + socialRate);
-        const yNet = gross - totalDeductions;
-        
-        document.getElementById('mNet').innerText = Math.round(yNet/12).toLocaleString() + " " + symbol;
-        document.getElementById('yNet').innerText = Math.round(yNet).toLocaleString() + " " + symbol;
-        document.getElementById('deduct').innerText = Math.round(totalDeductions).toLocaleString() + " " + symbol;
+            socialRate = 0.20;
+            const rates = { "1": 0.25, "2": 0.20, "3": 0.12, "4": 0.25, "5": 0.42 };
+            taxRate = rates[document.getElementById('sClass').value];
+        } else if(country === 'UAE') { taxRate = 0; socialRate = 0; }
+        const deduct = gross * (taxRate + socialRate);
+        const net = gross - deduct;
+        document.getElementById('mNet').innerText = Math.round(net/12).toLocaleString() + " " + symbol;
+        document.getElementById('yNet').innerText = Math.round(net).toLocaleString() + " " + symbol;
+        document.getElementById('deduct').innerText = Math.round(deduct).toLocaleString() + " " + symbol;
         document.getElementById('resTax').style.display = 'block';
     }
 
@@ -392,3 +354,4 @@
 
 </body>
 </html>
+
