@@ -1,202 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobalPath | Visa Guides, Scholarships & Career Excellence</title>
-    <meta name="description" content="Your ultimate resource for Digital Nomad Visas, Fully Funded Scholarships, and International Career Growth.">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GlobalPath | Technical Blueprints 2026</title>
+    <meta name="description" content="Technical roadmaps for visas, scholarships, and international career excellence.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
-        /* التنسيقات الأساسية الأصلية */
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-bg { background: radial-gradient(circle at top right, #f8fafc, #eff6ff); }
+        /* ============================================================
+           2. PRECISE DESIGN SYSTEM (ZERO BLOAT POLICY)
+           ============================================================ */
+        :root {
+            --blue-600: #2563eb;
+            --blue-700: #1d4ed8;
+            --blue-50: #eff6ff;
+            --indigo-600: #4f46e5;
+            --purple-600: #9333ea;
+            --red-600: #dc2626;
+            --amber-500: #f59e0b;
+            --amber-50: #fffbeb;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --white: #ffffff;
+            /* Shadows optimized for comfort */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.04);
+            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.05);
+            --shadow-premium: 0 30px 60px -12px rgba(0,0,0,0.08);
+
+            /* Footer-specific precise tokens */
+            --gp-bg: #ffffff;
+            --gp-border: #e9eef6;
+            --gp-muted: #9fb0c6;
+            --gp-logo-left: #3b6df6;
+            --gp-logo-right: #8f4eff;
+            --gp-container-w: 820px;
+            --gp-logo-size: 68px;
+            --gp-links-gap: 180px;
+            --gp-icon-size: 28px;
+        }
+
+        /* ============================================================
+           3. BASE ARCHITECTURE
+           ============================================================ */
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+        html { scroll-behavior: smooth; font-size: 16px; }
         
-        /* تنسيقات الأدوات بجميع تفاصيلها لضمان التناسق */
-        .tool-card { background: #ffffff; border-radius: 1.5rem; border: 1px solid #e2e8f0; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s; }
-        .tool-card:hover { transform: translateY(-5px); }
-        .tool-input { width: 100%; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 1rem; color: #1e293b; outline: none; transition: border-color 0.2s; }
-        .tool-input:focus { border-color: #2563eb; }
-        .tool-btn { width: 100%; padding: 15px; background: linear-gradient(135deg, #2563eb, #7c3aed); border: none; border-radius: 10px; color: #fff; font-weight: bold; cursor: pointer; transition: opacity 0.2s; }
-        .tool-btn:hover { opacity: 0.9; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--slate-50); 
+            color: var(--slate-900); 
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 1240px; 
+            margin: 0 auto; 
+            padding: 0 1.25rem; 
+        }
+
+        .gradient-text { 
+            background: linear-gradient(135deg, var(--blue-600), var(--purple-600)); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        /* ============================================================
+           4. NAVIGATION (ADAPTIVE & CLEAN)
+           ============================================================ */
+        nav { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(20px) saturate(180%); 
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            position: fixed; top: 15px; left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999; border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 999px; width: 94%; max-width: 1000px;
+            height: 4rem; display: flex; align-items: center;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            box-shadow: var(--shadow-md);
+        }
+
+        nav.scrolled {
+            top: 8px; height: 3.6rem; max-width: 850px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 1.25rem; }
+        .nav-brand { font-size: 1.35rem; font-weight: 900; letter-spacing: -0.05em; font-style: italic; cursor: pointer; }
         
-        /* منطقة النتائج */
-        .results-area { margin-top: 15px; padding: 20px; background: #eff6ff; border-radius: 12px; border-left: 4px solid #2563eb; display: none; }
-        .results-grid { display: grid; gap: 10px; }
-        .res-row { display: flex; justify-content: space-between; align-items: center; }
-        .res-label { font-size: 0.75rem; font-weight: 800; color: #64748b; text-transform: uppercase; }
-        .res-val { font-size: 1.1rem; font-weight: 900; color: #1e40af; }
+        .nav-links { display: none; gap: 0.25rem; position: relative; background: rgba(0,0,0,0.03); padding: 4px; border-radius: 999px; }
+        .nav-item { 
+            text-decoration: none; color: var(--slate-600); font-weight: 700; font-size: 0.78rem; 
+            text-transform: uppercase; letter-spacing: 0.05em; padding: 0.6rem 1.1rem;
+            border-radius: 999px; position: relative; z-index: 2; transition: all 0.3s ease;
+        }
+        .nav-item:hover { color: var(--blue-600); }
+
+        .nav-indicator {
+            position: absolute; height: calc(100% - 8px); background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-radius: 999px;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1; top: 4px; opacity: 0;
+        }
+
+        .menu-btn { color: var(--slate-500); cursor: pointer; font-size: 1.25rem; transition: 0.3s; padding: 0.5rem; }
+
+        /* ============================================================
+           5. HERO SECTION (OPTIMIZED FOR MOBILE)
+           ============================================================ */
+        header { 
+            padding-top: clamp(140px, 20vh, 200px); 
+            padding-bottom: clamp(60px, 10vh, 100px); 
+            text-align: center; 
+            background: radial-gradient(circle at 50% 0%, #eff6ff 0%, transparent 70%);
+        }
+        .hero-badge {
+            background: var(--blue-600); color: white; padding: 0.4rem 1.2rem;
+            border-radius: 999px; font-size: 10px; font-weight: 800; text-transform: uppercase;
+            letter-spacing: 0.2em; display: inline-block; margin-bottom: 1.5rem;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+        header h1 { 
+            font-size: clamp(2.25rem, 8vw, 4.5rem); font-weight: 900; 
+            letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 1.5rem; color: var(--slate-900); 
+        }
+        header p { 
+            font-size: clamp(1.1rem, 3vw, 1.4rem); color: var(--slate-500); 
+            max-width: 48rem; margin: 0 auto; font-weight: 500;
+        }
+
+        /* ============================================================
+           6. SECTION HEADERS & GRIDS
+           ============================================================ */
+        section { padding: 4rem 0; }
+        .section-header { display: flex; align-items: center; margin-bottom: 3rem; padding-top: 60px; margin-top: -30px; }
+        .section-header .dot { width: 12px; height: 12px; background: var(--blue-600); border-radius: 50%; margin-right: 1rem; }
+        .section-header h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); font-weight: 900; letter-spacing: -0.03em; text-transform: uppercase; font-style: italic; }
+
+        .grid { display: grid; gap: 1.5rem; }
+        @media (min-width: 768px) {
+            .md-grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .md-grid-2 { grid-template-columns: repeat(2, 1fr); }
+            .md-grid-4 { grid-template-columns: repeat(4, 1fr); }
+            .nav-links { display: flex; }
+            .md-hidden { display: none; }
+        }
+
+        /* ============================================================
+           7. COMPACT CARDS SYSTEM
+           ============================================================ */
+        article { 
+            background: var(--white); padding: 2rem; border-radius: 2rem; 
+            border: 1px solid var(--slate-100); transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+            display: flex; flex-direction: column; position: relative;
+        }
+        article:hover { 
+            transform: translateY(-8px); border-color: var(--blue-100);
+            box-shadow: var(--shadow-premium);
+        }
+        
+        .icon-box { 
+            width: 3.25rem; height: 3.25rem; border-radius: 1rem; 
+            display: flex; align-items: center; justify-content: center; 
+            color: white; font-size: 1.25rem; margin-bottom: 1.5rem;
+        }
+
+        .article-title { font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem; color: var(--slate-900); }
+        .article-desc { font-size: 0.9rem; color: var(--slate-500); margin-bottom: 1.5rem; line-height: 1.7; flex-grow: 1; }
+        .article-btn { 
+            font-size: 0.75rem; font-weight: 800; text-transform: uppercase; 
+            letter-spacing: 0.08em; color: var(--blue-600); text-decoration: none;
+            display: inline-flex; align-items: center; gap: 0.5rem; transition: 0.3s;
+        }
+        article:hover .article-btn { gap: 0.8rem; }
+
+        /* ============================================================
+           8. CLEAN CALCULATION TOOLS
+           ============================================================ */
+        .tool-panel { 
+            background: var(--white); border-radius: 2.25rem; border: 1px solid var(--slate-200); 
+            padding: clamp(1.5rem, 5vw, 3rem); box-shadow: var(--shadow-md); 
+        }
+        .label-tag { font-size: 0.7rem; font-weight: 800; color: var(--slate-400); text-transform: uppercase; margin-bottom: 0.5rem; display: block; letter-spacing: 0.08em; }
+        
+        .input-style { 
+            width: 100%; padding: 14px; background: var(--slate-50); 
+            border: 1px solid var(--slate-200); border-radius: 12px; 
+            margin-bottom: 1.25rem; outline: none; transition: 0.3s;
+            font-family: inherit; font-size: 0.95rem; color: var(--slate-800);
+        }
+        .input-style:focus { border-color: var(--blue-600); background: white; }
+        
+        .action-btn { 
+            width: 100%; padding: 18px; background: linear-gradient(135deg, var(--blue-600), var(--purple-600)); 
+            border: none; border-radius: 12px; color: #fff; font-weight: 800; 
+            cursor: pointer; transition: 0.3s; letter-spacing: 0.05em; font-size: 0.95rem;
+        }
+        .action-btn:hover { opacity: 0.95; box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2); }
+
+        .result-view { 
+            margin-top: 20px; padding: 1.25rem; background: var(--blue-50); 
+            border-radius: 16px; display: none; animation: slideUp 0.5s ease;
+        }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Unified Compact Warning */
+        .system-warning {
+            margin-top: 3rem; padding: 1.5rem; background: var(--amber-50); 
+            border-radius: 1.5rem; border: 1px solid rgba(245, 158, 11, 0.15);
+            display: flex; gap: 1rem; align-items: flex-start;
+        }
+        .warning-icon { font-size: 1.25rem; color: var(--amber-500); }
+        .warning-text h4 { font-size: 0.9rem; font-weight: 800; color: #92400e; margin-bottom: 0.25rem; text-transform: uppercase; }
+        .warning-text p { font-size: 0.8rem; color: #b45309; line-height: 1.6; font-weight: 500; }
+
+        /* ============================================================
+           DISCLAIMER CARD (Attractive final card)
+           ============================================================ */
+        .disclaimer-card {
+            margin-top: 2rem;
+            padding: 1.25rem;
+            border-radius: 1.25rem;
+            background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+            border: 1px solid rgba(37,99,235,0.08);
+            box-shadow: 0 8px 30px rgba(15,23,42,0.06);
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            max-width: 900px;
+        }
+        .disclaimer-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--blue-600), var(--purple-600));
+            color: white;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+        }
+        .disclaimer-card h4 {
+            margin: 0 0 6px 0;
+            font-size: 0.98rem;
+            font-weight: 900;
+            color: var(--slate-900);
+        }
+        .disclaimer-card p {
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* ============================================================
+           9. FOOTER — Precise, image-matching styles (REPLACED)
+           ============================================================ */
+        /* Container reset for footer to match screenshot composition */
+        footer {
+            background: var(--gp-bg);
+            border-top: 1px solid var(--gp-border);
+            padding-top: 120px; /* lots of top whitespace like the screenshot */
+            padding-bottom: 90px;
+            text-align: center;
+        }
+
+        /* wrapper to center and constrain width */
+        .gp-inner {
+            max-width: var(--gp-container-w);
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+
+        /* gradient logo — bold italic and size tuned to match */
+        .footer-logo {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            font-weight: 900;
+            font-style: italic;
+            font-size: var(--gp-logo-size);
+            line-height: 1;
+            letter-spacing: -0.03em;
+            background: linear-gradient(90deg, var(--gp-logo-left), var(--gp-logo-right));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 0;
+            user-select: none;
+            transform: translateY(-6px);
+        }
+
+        /* main links row — very wide gaps like the image */
+        .gp-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--gp-links-gap);
+            width: 100%;
+            max-width: var(--gp-container-w);
+            box-sizing: border-box;
+            pointer-events: auto;
+        }
+
+        .gp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: var(--gp-muted);
+            font-weight: 800;
+            font-size: 13px;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            opacity: 0.96;
+        }
+
+        .gp-link i {
+            font-size: var(--gp-icon-size);
+            color: var(--gp-muted);
+            opacity: 0.95;
+            width: var(--gp-icon-size);
+            height: var(--gp-icon-size);
+            display: inline-flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        /* Terms on its own line, stacked */
+        .gp-terms {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            text-decoration: none;
+            color: var(--gp-muted);
+            font-weight: 800;
+            font-size: 12px;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            gap: 12px;
+            margin-top: 32px;
+            opacity: 0.95;
+        }
+
+        .gp-terms i{
+            font-size: 20px;
+            color: var(--gp-muted);
+        }
+
+        /* copyright styling tuned to image */
+        .gp-copy {
+            margin-top: 6px;
+            font-size: 12px;
+            font-weight: 800;
+            color: #c4d1df;
+            letter-spacing: 0.36em;
+            text-transform: uppercase;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        /* responsive tweaks */
+        @media (max-width: 920px){
+            :root { --gp-links-gap: 120px; --gp-logo-size: 60px; }
+            .footer-logo{ font-size: var(--gp-logo-size); transform: translateY(-4px); }
+        }
+
+        @media (max-width: 700px){
+            :root { --gp-logo-size: 56px; --gp-links-gap: 36px; --gp-icon-size: 22px; }
+            .gp-links{
+                gap: 36px;
+                flex-wrap: wrap;
+                width: auto;
+                max-width: 420px;
+            }
+            .footer-logo{ font-size: 52px; }
+            .gp-link{ font-size: 11px; letter-spacing: 0.22em; gap:10px; }
+            footer{ padding-top: 80px; padding-bottom: 64px; }
+            .gp-copy{ font-size: 11px; }
+        }
+
+        /* subtle focus ring for accessibility */
+        .gp-link:focus, .gp-terms:focus {
+            outline: 3px solid rgba(59,109,246,0.12);
+            outline-offset: 6px;
+            border-radius: 8px;
+        }
+
+        /* ============================================================
+           10. FOOTER / MOBILE MENU (original kept as-is below for other parts)
+           ============================================================ */
+        #mobile-menu { 
+            display: none; position: fixed; top: 85px; left: 50%; transform: translateX(-50%); 
+            width: 90%; background: white; z-index: 8999; border-radius: 1.5rem; 
+            padding: 1.5rem; border: 1px solid var(--slate-200); box-shadow: var(--shadow-lg); 
+        }
+        #mobile-menu.show { display: block; animation: zoomIn 0.3s ease; }
+        @keyframes zoomIn { from { opacity: 0; scale: 0.95; } to { opacity: 1; scale: 1; } }
+        #mobile-menu a { display: block; padding: 1rem; text-align: center; font-weight: 800; color: var(--slate-700); text-decoration: none; border-bottom: 1px solid var(--slate-50); }
+
+        /* small responsive niceties */
+        @media (max-width: 767px) {
+            nav { width: 96%; left: 50%; transform: translateX(-50%); padding: 0 0.6rem; }
+            header { padding-top: 120px; padding-bottom: 60px; }
+            .disclaimer-card { flex-direction: row; padding: 1rem; }
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body>
 
-<nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
-        <span class="text-2xl font-extrabold gradient-text tracking-tighter italic">GlobalPath.</span>
-        <div class="hidden md:flex space-x-8 font-bold text-slate-600 text-sm uppercase tracking-wider">
-            <a href="#visas" class="hover:text-blue-600 transition">Visas</a>
-            <a href="#scholarships" class="hover:text-blue-600 transition">Scholarships</a>
-            <a href="#career" class="hover:text-blue-600 transition">Career</a>
-            <a href="#tools" class="hover:text-blue-600 transition">Tools</a>
+<nav id="mainNav">
+    <div class="nav-container">
+        <span class="nav-brand font-black gradient-text" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">GlobalPath.</span>
+        <div class="nav-links" id="navLinks">
+            <div class="nav-indicator" id="indicator"></div>
+            <a href="#visas" class="nav-item">Visas</a>
+            <a href="#scholarships" class="nav-item">Funding</a>
+            <a href="#career" class="nav-item">Career</a>
+            <a href="#tools" class="nav-item">Engine</a>
         </div>
-        <div class="md:hidden text-slate-400 cursor-pointer" id="menu-btn"><i class="fas fa-bars"></i></div>
-    </div>
-    <div class="md:hidden hidden px-4 pb-4 space-y-2 bg-white/90 border-t border-slate-200" id="mobile-menu">
-        <a href="#visas" class="block py-2 font-bold text-slate-700">Visas</a>
-        <a href="#scholarships" class="block py-2 font-bold text-slate-700">Scholarships</a>
-        <a href="#career" class="block py-2 font-bold text-slate-700">Career</a>
-        <a href="#tools" class="block py-2 font-bold text-slate-700">Tools</a>
+        <div class="md-hidden menu-btn" id="menu-btn" aria-label="menu-button"><i class="fas fa-bars-staggered"></i></div>
     </div>
 </nav>
 
-<header class="py-24 px-4 text-center hero-bg border-b border-slate-100">
-    <div class="max-w-4xl mx-auto">
-        <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block">Free Access 2026</span>
-        <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tighter italic">Your Future is <span class="gradient-text">Global.</span></h1>
-        <p class="text-xl text-slate-500 mb-10 leading-relaxed italic max-w-2xl mx-auto font-medium">Technical roadmaps for international visas and career excellence.</p>
+<div id="mobile-menu">
+    <a href="#visas" onclick="toggleMenu()">Visa Roadmaps</a>
+    <a href="#scholarships" onclick="toggleMenu()">Scholarships</a>
+    <a href="#career" onclick="toggleMenu()">Career Growth</a>
+    <a href="#tools" onclick="toggleMenu()">Engine Tools</a>
+</div>
+
+<header>
+    <div class="container">
+        <span class="hero-badge">Blueprints 2026</span>
+        <h1 class="italic">Unlock your <span class="gradient-text">Future.</span></h1>
+        <p>Technical roadmaps for international visas, scholarships, and career excellence without the complexity.</p>
     </div>
 </header>
 
-<main class="max-w-7xl mx-auto px-4 py-16">
+<main class="container">
 
-    <section id="visas" class="mb-24">
-        <div class="flex items-center mb-12"><div class="w-10 h-1 bg-blue-600 mr-4"></div><h2 class="text-3xl font-black uppercase tracking-tighter italic">Visa Roadmaps</h2></div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 text-white text-xl group-hover:bg-blue-600 transition-colors"><i class="fas fa-passport"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Germany Freelance Visa</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Step-by-step registration for 'Freiberufler' status.</p>
-                <a href="./germany-freelance-visa.html" class="text-blue-600 font-black text-xs uppercase border-b-2 border-blue-50 hover:border-blue-600 transition pb-1">Read Blueprint</a>
+    <section id="visas">
+        <div class="section-header">
+            <div class="dot"></div>
+            <h2>Visa Blueprints</h2>
+        </div>
+        <div class="grid md-grid-3">
+            <article>
+                <div class="icon-box" style="background: var(--slate-900);"><i class="fas fa-passport"></i></div>
+                <h3 class="article-title">Germany Freelance</h3>
+                <p class="article-desc">Master the 'Freiberufler' permit. Learn how to secure your tax ID, handle German health insurance, and vet local client contracts for 2026 compliance.</p>
+                <a href="./germany-freelance-visa.html" class="article-btn">Get Blueprint <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-blue-500 rounded-2xl flex items-center justify-center mb-6 text-white text-xl"><i class="fas fa-sun"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Spain Nomad Visa</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">A deep dive into the 15% flat tax rate (Beckham Law).</p>
-                <a href="./spain-digital-nomad-visa.html" class="text-blue-500 font-black text-xs uppercase border-b-2 border-blue-200 hover:border-blue-600 transition pb-1">Read Blueprint</a>
+            <article>
+                <div class="icon-box" style="background: var(--blue-600);"><i class="fas fa-sun"></i></div>
+                <h3 class="article-title">Spain Nomad Visa</h3>
+                <p class="article-desc">Live in Spain while keeping your global remote income. Expert guide on Beckham Law tax benefits and the new digital nomad NIE requirements.</p>
+                <a href="./spain-digital-nomad-visa.html" class="article-btn">Get Blueprint <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl"><i class="fas fa-water"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Portugal Nomad Visa</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Requirements for monthly income and residency.</p>
-                <a href="./portugal-digital-nomad-visa.html" class="text-indigo-600 font-black text-xs uppercase border-b-2 border-indigo-200 hover:border-indigo-600 transition pb-1">Read Blueprint</a>
+            <article>
+                <div class="icon-box" style="background: var(--indigo-600);"><i class="fas fa-water"></i></div>
+                <h3 class="article-title">Portugal D8 / D7</h3>
+                <p class="article-desc">Comparing passive income and remote work residency. Detailed financial thresholds for Lisbon and Madeira under current migration laws.</p>
+                <a href="./portugal-digital-nomad-visa.html" class="article-btn">Get Blueprint <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-slate-700 rounded-2xl flex items-center justify-center mb-6 text-white text-xl"><i class="fas fa-euro-sign"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Cheapest Nomad Visas</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Compare costs across budget-friendly countries.</p>
-                <a href="./cheapest-digital-nomad-visas.html" class="text-slate-700 font-black text-xs uppercase border-b-2 border-slate-200 transition pb-1">Read Blueprint</a>
+            <article>
+                <div class="icon-box" style="background: var(--slate-700);"><i class="fas fa-euro-sign"></i></div>
+                <h3 class="article-title">Cheapest Permits</h3>
+                <p class="article-desc">Discover 10 jurisdictions where you can secure legal residency with monthly income requirements starting as low as $1,850 USD.</p>
+                <a href="./cheapest-digital-nomad-visas.html" class="article-btn">Get Blueprint <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl"><i class="fas fa-exchange-alt"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Nomad Visa vs Work Visa</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Full comparison between permits.</p>
-                <a href="./digital-nomad-vs-work-visa.html" class="text-purple-600 font-black text-xs uppercase border-b-2 border-purple-100 transition pb-1">Read Blueprint</a>
+            <article>
+                <div class="icon-box" style="background: var(--purple-600);"><i class="fas fa-exchange-alt"></i></div>
+                <h3 class="article-title">Work vs Nomad</h3>
+                <p class="article-desc">Technical breakdown of rights. Which permit leads to citizenship? Comparing family rights and long-term residency tracks.</p>
+                <a href="./digital-nomad-vs-work-visa.html" class="article-btn">Get Blueprint <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-red-500 rounded-2xl flex items-center justify-center mb-6 text-white text-xl"><i class="fas fa-times-circle"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Nomad Visa Rejections</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Common reasons and how to avoid pitfalls.</p>
-                <a href="./digital-nomad-visa-rejection.html" class="text-red-600 font-black text-xs uppercase border-b-2 border-red-200 hover:border-red-600 transition pb-1">Read Blueprint</a>
+            <article>
+                <div class="icon-box" style="background: var(--red-600);"><i class="fas fa-shield-virus"></i></div>
+                <h3 class="article-title">Reject Prevention</h3>
+                <p class="article-desc">Analyze why 25% of applications fail. Optimize your bank statements and employer letters to ensure a 99% success rate.</p>
+                <a href="./digital-nomad-visa-rejection.html" class="article-btn">Get Blueprint <i class="fas fa-arrow-right"></i></a>
             </article>
         </div>
     </section>
 
-    <section id="scholarships" class="mb-24">
-        <div class="flex items-center mb-12"><div class="w-10 h-1 bg-blue-600 mr-4"></div><h2 class="text-3xl font-black uppercase tracking-tighter italic">Scholarships</h2></div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl group-hover:bg-blue-500 transition-colors"><i class="fas fa-pen-nib"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Motivation Letter Guide</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Master the art of writing a winning statement.</p>
-                <a href="how-to-write-motivation-letter.html" class="text-blue-600 font-black text-xs uppercase border-b-2 border-blue-50 transition pb-1">Read Guide</a>
+    <section id="scholarships">
+        <div class="section-header">
+            <div class="dot"></div>
+            <h2>Scholarships</h2>
+        </div>
+        <div class="grid md-grid-3">
+            <article>
+                <div class="icon-box" style="background: var(--blue-600);"><i class="fas fa-feather"></i></div>
+                <h3 class="article-title">Motivation Letter</h3>
+                <p class="article-desc">Technical narrative structures for funding. How to align your social impact with selection committee goals for 2026.</p>
+                <a href="how-to-write-motivation-letter.html" class="article-btn">Read Guide <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 text-white text-xl group-hover:bg-blue-600 transition-colors"><i class="fas fa-graduation-cap"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">DAAD Scholarship Germany</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Guide to Master's and PhD funding in Germany.</p>
-                <a href="daad-scholarship-germany.html" class="text-blue-600 font-black text-xs uppercase border-b-2 border-blue-50 transition pb-1">View Scholarship</a>
+            <article>
+                <div class="icon-box" style="background: var(--slate-900);"><i class="fas fa-graduation-cap"></i></div>
+                <h3 class="article-title">DAAD Germany</h3>
+                <p class="article-desc">The ultimate fully funded program. Full coverage of tuition, travel, and €934+ monthly stipend for Masters and PhD tracks.</p>
+                <a href="daad-scholarship-germany.html" class="article-btn" style="color:var(--slate-900)">View Details <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl group-hover:bg-purple-500 transition-colors"><i class="fas fa-landmark"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">Chevening Scholarship UK</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Official 2026 guide for UK leaders.</p>
-                <a href="chevening-scholarship-uk.html" class="text-purple-600 font-black text-xs uppercase border-b-2 border-purple-100 transition pb-1">View Scholarship</a>
+            <article>
+                <div class="icon-box" style="background: var(--purple-600);"><i class="fas fa-landmark"></i></div>
+                <h3 class="article-title">Chevening UK</h3>
+                <p class="article-desc">The UK's award for global leaders. Complete interview prep and university shortlisting strategies for the next cycle.</p>
+                <a href="chevening-scholarship-uk.html" class="article-btn" style="color:var(--purple-600)">View Details <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl transition-all group">
-                <div class="w-14 h-14 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-white text-xl group-hover:bg-red-500 transition-colors"><i class="fas fa-torii-gate"></i></div>
-                <h3 class="text-xl font-extrabold mb-4 italic uppercase tracking-tight">MEXT Japan Scholarship</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">Study in the Land of the Rising Sun.</p>
-                <a href="mext-scholarship-japan.html" class="text-red-600 font-black text-xs uppercase border-b-2 border-red-200 transition pb-1">View Scholarship</a>
+            <article>
+                <div class="icon-box" style="background: var(--red-600);"><i class="fas fa-torii-gate"></i></div>
+                <h3 class="article-title">MEXT Japan Scholarship</h3>
+                <p class="article-desc">Fully-funded government opportunity to study in the Land of the Rising Sun.</p>
+                <a href="mext-scholarship-japan.html" class="article-btn" style="color:var(--red-600)">View Scholarship <i class="fas fa-arrow-right"></i></a>
             </article>
         </div>
     </section>
 
-    <section id="career" class="mb-24">
-        <div class="flex items-center mb-12"><div class="w-10 h-1 bg-blue-600 mr-4"></div><h2 class="text-3xl font-black uppercase tracking-tighter italic">Career Excellence</h2></div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-file-invoice"></i></div>
-                <h3 class="text-lg font-extrabold mb-2 italic uppercase">Resume Optimization</h3>
-                <p class="text-slate-500 text-xs mb-4 italic">Master ATS remote roles.</p>
-                <a href="remote-work-resume-optimization.html" class="text-blue-600 font-black text-[10px] uppercase border-b border-blue-100 transition pb-1">Read Guide</a>
+    <section id="career">
+        <div class="section-header">
+            <div class="dot"></div>
+            <h2>Career Excellence</h2>
+        </div>
+        <div class="grid md-grid-4">
+            <article>
+                <div class="icon-box" style="background: var(--blue-600);"><i class="fas fa-file-invoice"></i></div>
+                <h3 class="article-title">Resume Optimization</h3>
+                <p class="article-desc">Master ATS algorithms for remote roles.</p>
+                <a href="remote-work-resume-optimization.html" class="article-btn">Read Guide <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-rocket"></i></div>
-                <h3 class="text-lg font-extrabold mb-2 italic uppercase">High-Paying Careers</h3>
-                <p class="text-slate-500 text-xs mb-4 italic">Top 2026 roles.</p>
-                <a href="high-paying-remote-careers.html" class="text-blue-600 font-black text-[10px] uppercase border-b border-blue-100 transition pb-1">Read Guide</a>
+            <article>
+                <div class="icon-box" style="background: var(--slate-900);"><i class="fas fa-rocket"></i></div>
+                <h3 class="article-title">High-Paying Careers</h3>
+                <p class="article-desc">Top 2026 roles for digital nomads.</p>
+                <a href="high-paying-remote-careers.html" class="article-btn">Read Guide <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-video"></i></div>
-                <h3 class="text-lg font-extrabold mb-2 italic uppercase">Virtual Interviews</h3>
-                <p class="text-slate-500 text-xs mb-4 italic">Ace interviews from home.</p>
-                <a href="master-virtual-interview.html" class="text-purple-600 font-black text-[10px] uppercase border-b border-purple-100 transition pb-1">Read Guide</a>
+            <article>
+                <div class="icon-box" style="background: var(--purple-600);"><i class="fas fa-video"></i></div>
+                <h3 class="article-title">Virtual Interviews</h3>
+                <p class="article-desc">Ace global interviews from home.</p>
+                <a href="master-virtual-interview.html" class="article-btn">Read Guide <i class="fas fa-arrow-right"></i></a>
             </article>
 
-            <article class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center mb-4 text-white text-lg"><i class="fas fa-heart-pulse"></i></div>
-                <h3 class="text-lg font-extrabold mb-2 italic uppercase">Global Insurance</h3>
-                <p class="text-slate-500 text-xs mb-4 italic">Protect your health.</p>
-                <a href="global-health-insurance-nomads.html" class="text-red-600 font-black text-[10px] uppercase border-b border-red-100 transition pb-1">Read Guide</a>
+            <article>
+                <div class="icon-box" style="background: var(--red-600);"><i class="fas fa-heart-pulse"></i></div>
+                <h3 class="article-title">Global Insurance</h3>
+                <p class="article-desc">Protect your health across borders.</p>
+                <a href="global-health-insurance-nomads.html" class="article-btn">Read Guide <i class="fas fa-arrow-right"></i></a>
             </article>
         </div>
     </section>
 
-    <section id="tools" class="mb-24">
-        <div class="flex items-center mb-12"><div class="w-10 h-1 bg-blue-600 mr-4"></div><h2 class="text-3xl font-black uppercase tracking-tighter italic">Migration & Tax Tools</h2></div>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="tool-card">
-                <h3 class="text-xl font-extrabold mb-6 italic text-slate-800"><i class="fas fa-scale-balanced mr-2 text-blue-600"></i> Tax & Net Engine</h3>
-                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Work Country</label>
-                <select id="country" onchange="toggleGer()" class="tool-input">
+    <section id="tools">
+        <div class="section-header">
+            <div class="dot"></div>
+            <h2>Smart Engine</h2>
+        </div>
+        <div class="grid md-grid-2">
+            <div class="tool-panel">
+                <h3 class="article-title italic" style="margin-bottom: 1.5rem;"><i class="fas fa-calculator mr-2" style="color: var(--blue-600);"></i> Tax & Net Salary Engine</h3>
+
+                <label class="label-tag">Work Country</label>
+                <select id="country" onchange="toggleGer()" class="input-style">
                     <option value="GER">Germany (EUR €)</option>
                     <option value="USA">United States (USD $)</option>
                     <option value="CAN">Canada (CAD $)</option>
                     <option value="UAE">United Arab Emirates (AED)</option>
                 </select>
-                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Annual Gross Salary</label>
-                <input type="number" id="gross" placeholder="e.g. 75000" class="tool-input">
+
+                <label class="label-tag">Annual Gross Salary</label>
+                <input type="number" id="gross" placeholder="e.g. 90000" class="input-style">
+
                 <div id="gerOnly">
-                    <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Steuerklasse (Tax Class)</label>
-                    <select id="sClass" class="tool-input">
+                    <label class="label-tag">Steuerklasse (Tax Class)</label>
+                    <select id="sClass" class="input-style">
                         <option value="1">Class 1: Single</option>
                         <option value="2">Class 2: Single Parent</option>
                         <option value="3">Class 3: Married</option>
@@ -204,105 +616,199 @@
                         <option value="5">Class 5: Married (Lowest Net)</option>
                     </select>
                 </div>
-                <button class="tool-btn" onclick="calcTax()">Calculate Results</button>
-                <div id="resTax" class="results-area">
-                    <div class="results-grid">
-                        <div class="res-row"><span class="res-label">Monthly Net:</span><b id="mNet" class="res-val">0</b></div>
-                        <div class="res-row"><span class="res-label">Annual Net:</span><b id="yNet" class="res-val">0</b></div>
-                        <div class="res-row"><span class="res-label">Deductions:</span><b id="deduct" class="text-red-500 font-black">0</b></div>
-                    </div>
+
+                <button class="action-btn" onclick="calcTax()">Generate Report</button>
+
+                <div id="resTax" class="result-view">
+                    <div style="display:flex; justify-content: space-between; margin-bottom:8px;"><span class="label-tag">Monthly Net:</span><b id="mNet" style="color: var(--blue-600);">0</b></div>
+                    <div style="display:flex; justify-content: space-between; margin-bottom:8px;"><span class="label-tag">Annual Net:</span><b id="yNet" style="color: var(--blue-600);">0</b></div>
+                    <div style="display:flex; justify-content: space-between;"><span class="label-tag">Total Deductions:</span><b id="deduct" style="color: var(--red-600);">0</b></div>
                 </div>
             </div>
 
-            <div class="tool-card">
-                <h3 class="text-xl font-extrabold mb-6 italic text-slate-800"><i class="fas fa-earth-americas mr-2 text-blue-600"></i> Relocation Compare</h3>
-                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Current City</label>
-                <select id="c1" class="tool-input"></select>
-                <label class="text-xs font-bold text-slate-400 uppercase mb-1 block">Target City</label>
-                <select id="c2" class="tool-input"></select>
-                <button class="tool-btn" onclick="calcComp()">Compare Budget</button>
-                <div id="resComp" class="results-area">
-                    <div class="results-grid">
-                        <div class="res-row"><span class="res-label">Cost Shift:</span><b id="shift" class="res-val">0%</b></div>
-                        <div class="res-row"><span class="res-label">Local Market:</span><b id="market" class="res-val">--</b></div>
+            <div class="tool-panel">
+                <h3 class="article-title italic" style="margin-bottom: 1.5rem;"><i class="fas fa-city mr-2" style="color: var(--blue-600);"></i> Relocation Budget</h3>
+                <label class="label-tag">Current City</label>
+                <select id="c1" class="input-style"></select>
+                <label class="label-tag">Target Destination</label>
+                <select id="c2" class="input-style"></select>
+                <button class="action-btn" onclick="calcComp()">Analyze Delta</button>
+                <div id="resComp" class="result-view">
+                    <div style="text-align: center;">
+                        <span class="label-tag">Estimated Shift</span>
+                        <div id="shift" style="font-size: 2.2rem; font-weight: 900; color: var(--blue-600);">0%</div>
+                        <div style="margin-top:12px; display:flex; justify-content:space-between;"><span class="label-tag">Local Market:</span><b id="market" style="color:var(--blue-600);">--</b></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mt-8 p-6 bg-slate-100 rounded-2xl flex items-start gap-4 border border-slate-200">
-            <i class="fas fa-circle-info text-blue-600 mt-1"></i>
-            <p class="text-xs text-slate-600 leading-relaxed italic"><strong>Legal Disclaimer:</strong> Estimates for 2026. Consult professional advisor for precise financial planning.</p>
+
+        <!-- Attractive final card (the "last" item) -->
+        <div class="disclaimer-card" role="note" aria-label="Legal disclaimer">
+            <div class="disclaimer-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></div>
+            <div>
+                <h4>Legal Disclaimer</h4>
+                <p>
+                    The calculated values are estimates for 2026. For Canada, deductions include federal tax and average provincial tax.
+                    German classes affect monthly liquidity. Please consult a professional advisor for precise legal and financial planning.
+                </p>
+            </div>
         </div>
     </section>
 </main>
 
+<!-- ========== NEW FOOTER (image-matching) ========== -->
+<!-- ====== Required Resources (مرة واحدة بالصفحة) ====== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .gradient-text{
+    background: linear-gradient(135deg,#2563eb,#9333ea);
+    -webkit-background-clip:text;
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+  }
+</style>
+<!-- ====== Footer ====== -->
+
 <footer class="bg-white border-t border-slate-200 py-12">
     <div class="max-w-7xl mx-auto px-4 text-center md:text-left">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-black gradient-text tracking-tighter italic">GlobalPath.</div>
+
+            <div class="text-2xl font-black gradient-text tracking-tighter italic">
+                GlobalPath.
+            </div>
+
             <div class="flex flex-wrap justify-center items-center gap-8 text-slate-400">
                 <a href="./about-us.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-info-circle text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">About</span>
                 </a>
+
                 <a href="./contact-us.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-envelope text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">Contact</span>
                 </a>
+
                 <a href="./privacy-policy.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-user-shield text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">Privacy</span>
                 </a>
+
                 <a href="./terms-conditions.html" class="flex items-center gap-2 hover:text-blue-600 transition-colors group">
                     <i class="fas fa-file-contract text-sm"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em]">Terms</span>
                 </a>
             </div>
-            <div class="text-[9px] font-bold text-slate-400 tracking-[0.3em] uppercase italic">© 2026 // GlobalPath.</div>
+
+            <div class="text-[9px] font-bold text-slate-400 tracking-[0.3em] uppercase italic">
+                © 2026 // GlobalPath.
+            </div>
+
         </div>
     </div>
 </footer>
 
 <script>
-    // تهيئة البيانات والمنطق البرمجي (All Cities & Tax Logic Included)
-    const cities = [
-        { name: "Berlin, DE", cost: 3000, market: "High Demand" },
-        { name: "Toronto, CA", cost: 4100, market: "Very Expensive" },
+    const cityData = [
+        { name: "Berlin, DE", cost: 3200, market: "High Demand" },
+        { name: "Toronto, CA", cost: 4400, market: "Very Expensive" },
         { name: "Vancouver, CA", cost: 4300, market: "Extreme" },
-        { name: "Dubai, UAE", cost: 4200, market: "Fast Growing" },
-        { name: "New York, US", cost: 6000, market: "Extreme" },
-        { name: "Lisbon, PT", cost: 2400, market: "Competitive" }
+        { name: "Dubai, UAE", cost: 4600, market: "Fast Growing" },
+        { name: "New York, US", cost: 6800, market: "Extreme" },
+        { name: "Lisbon, PT", cost: 2700, market: "Competitive" },
+        { name: "Istanbul, TR", cost: 1900, market: "Affordable" },
+        { name: "Prague, CZ", cost: 1800, market: "Competitive" }
     ];
 
     document.addEventListener("DOMContentLoaded", () => {
+        const nav = document.getElementById('mainNav');
+        const items = document.querySelectorAll('.nav-item');
+        const indicator = document.getElementById('indicator');
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function moveIndicator(el) {
+            indicator.style.width = `${el.offsetWidth}px`;
+            indicator.style.left = `${el.offsetLeft}px`;
+            indicator.style.opacity = "1";
+        }
+        items.forEach(item => item.addEventListener('mouseenter', (e) => moveIndicator(e.target)));
+        document.getElementById('navLinks').addEventListener('mouseleave', () => indicator.style.opacity = "0");
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
         const s1 = document.getElementById('c1'); const s2 = document.getElementById('c2');
-        if(s1 && s2) { cities.forEach(c => { const opt = `<option value="${c.cost}">${c.name}</option>`; s1.innerHTML += opt; s2.innerHTML += opt; }); }
-        document.getElementById("menu-btn").onclick = () => document.getElementById("mobile-menu").classList.toggle("hidden");
+        cityData.forEach(c => { const opt = `<option value="${c.cost}">${c.name}</option>`; s1.innerHTML += opt; s2.innerHTML += opt; });
+
+        menuBtn.onclick = () => mobileMenu.classList.toggle('show');
     });
 
-    function toggleGer() { document.getElementById('gerOnly').style.display = (document.getElementById('country').value === 'GER') ? 'block' : 'none'; }
+    function toggleMenu() { document.getElementById('mobile-menu').classList.remove('show'); }
+
+    function toggleGer() { 
+        const gerOnly = document.getElementById('gerOnly');
+        if(!gerOnly) return;
+        gerOnly.style.display = (document.getElementById('country').value === 'GER') ? 'block' : 'none'; 
+    }
 
     function calcTax() {
-        const country = document.getElementById('country').value; const gross = parseFloat(document.getElementById('gross').value);
-        if(!gross) return alert("Please enter amount");
-        let tRate = 0.22, sRate = 0.07; let sym = (country === 'GER') ? "€" : (country === 'USA' ? "$" : (country === 'CAN' ? "C$" : "AED"));
-        if(country === 'GER') { sRate = 0.20; const r = {"1":0.25,"2":0.20,"3":0.12,"4":0.25,"5":0.42}; tRate = r[document.getElementById('sClass').value]; }
-        else if(country === 'UAE') { tRate = 0; sRate = 0; }
-        const deduct = gross * (tRate + sRate); const net = gross - deduct;
-        document.getElementById('mNet').innerText = Math.round(net/12).toLocaleString() + " " + sym;
-        document.getElementById('yNet').innerText = Math.round(net).toLocaleString() + " " + sym;
-        document.getElementById('deduct').innerText = Math.round(deduct).toLocaleString() + " " + sym;
+        const country = document.getElementById('country').value;
+        const gross = parseFloat(document.getElementById('gross').value);
+        if(!gross || isNaN(gross)) {
+            alert("Please enter a valid salary amount");
+            return;
+        }
+
+        // default rates and symbol
+        let taxRate = 0.28;
+        let socialRate = 0.0;
+        let symbol = "$";
+
+        if(country === 'GER') {
+            // social contributions + class-based tax rates (approximate simplified)
+            socialRate = 0.20;
+            const sc = document.getElementById('sClass') ? document.getElementById('sClass').value : "1";
+            const classRates = { "1": 0.25, "2": 0.20, "3": 0.12, "4": 0.25, "5": 0.42 };
+            taxRate = classRates[sc] !== undefined ? classRates[sc] : 0.25;
+            symbol = "€";
+        } else if(country === 'USA') {
+            // simplified blended rate
+            taxRate = 0.22; socialRate = 0.07; symbol = "$";
+        } else if(country === 'CAN') {
+            taxRate = 0.20; socialRate = 0.05; symbol = "C$";
+        } else if(country === 'UAE') {
+            taxRate = 0.0; socialRate = 0.0; symbol = "AED";
+        }
+
+        const totalDeductions = gross * (taxRate + socialRate);
+        const yNet = gross - totalDeductions;
+        const mNet = Math.round(yNet / 12);
+
+        document.getElementById('mNet').innerText = mNet.toLocaleString() + " " + symbol;
+        document.getElementById('yNet').innerText = Math.round(yNet).toLocaleString() + " " + symbol;
+        document.getElementById('deduct').innerText = Math.round(totalDeductions).toLocaleString() + " " + symbol;
         document.getElementById('resTax').style.display = 'block';
     }
 
     function calcComp() {
-        const v1 = document.getElementById('c1').value; const v2 = document.getElementById('c2').value;
-        const c2Data = cities.find(c => c.cost == v2); const diff = ((v2 - v1) / v1 * 100).toFixed(0);
+        const v1 = parseFloat(document.getElementById('c1').value);
+        const v2 = parseFloat(document.getElementById('c2').value);
+        if(!v1 || !v2) return;
+        const city2 = cityData.find(c => c.cost == v2) || { market: "Unknown" };
+        const diff = ((v2 - v1) / v1 * 100).toFixed(0);
         document.getElementById('shift').innerText = (diff > 0 ? "+" : "") + diff + "%";
-        document.getElementById('market').innerText = c2Data.market;
+        document.getElementById('market').innerText = city2.market;
         document.getElementById('resComp').style.display = 'block';
     }
 </script>
 </body>
 </html>
-
