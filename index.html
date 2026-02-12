@@ -13,13 +13,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
 
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-bg { background: radial-gradient(circle at top right, #f8fafc, #eff6ff); }
         
-        /* تنسيقات مخصصة للأدوات لضمان التناسق الكامل */
         .tool-card { background: #ffffff; border-radius: 1.5rem; border: 1px solid #e2e8f0; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
         .tool-input { width: 100%; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 1rem; color: #1e293b; outline: none; }
         .tool-btn { width: 100%; padding: 15px; background: linear-gradient(135deg, #2563eb, #7c3aed); border: none; border-radius: 10px; color: #fff; font-weight: bold; cursor: pointer; transition: opacity 0.2s; }
@@ -292,7 +300,6 @@
 </footer>
 
 <script>
-    // تهيئة البيانات والتحكم في القائمة
     const cities = [
         { name: "Berlin, DE", cost: 3000, market: "High Demand" },
         { name: "Toronto, CA", cost: 4100, market: "Very Expensive" },
@@ -305,11 +312,12 @@
     document.addEventListener("DOMContentLoaded", () => {
         const s1 = document.getElementById('c1'); 
         const s2 = document.getElementById('c2');
-        cities.forEach(c => { 
-            s1.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
-            s2.innerHTML += `<option value="${c.cost}">${c.name}</option>`; 
-        });
-
+        if(s1 && s2) {
+            cities.forEach(c => { 
+                const opt = `<option value="${c.cost}">${c.name}</option>`;
+                s1.innerHTML += opt; s2.innerHTML += opt; 
+            });
+        }
         document.getElementById("menu-btn").onclick = () => {
             document.getElementById("mobile-menu").classList.toggle("hidden");
         };
