@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
-Disallow: /private/
 
+# Sitemap XML التقليدي لجميع الصفحات
 Sitemap: https://globalpath100.github.io/sitemap.xml
+
+# Atom Sitemap لتسريع الفهرسة للصفحات الجديدة
+Sitemap: https://globalpath100.github.io/atom.xml
+
+# نسخة إضافية لموقعك (mysites.xml)
+Sitemap: https://globalpath100.github.io/mysites.xml
